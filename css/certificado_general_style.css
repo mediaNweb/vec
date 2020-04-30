@@ -1,0 +1,124 @@
+@page {
+	size: landscape;
+	margin: 0;
+}
+
+/* @media print {*/
+* {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#controls, .footer, .footerarea {
+	display: none;
+}
+html, body {
+	/*changing width to 100% causes huge overflow and wrap*/
+	background: #FFF;
+	width: 297mm;
+	height: 210mm;
+}
+.page1 {
+	overflow: hidden; 
+	position: relative;
+	height: 100%;
+	width: auto;
+	left: 0;
+	top: 0;
+}
+.row-1 {
+/*	overflow: hidden; */
+/*	position: absolute;*/
+	width: 100%;
+}
+.row-2 {
+/*	overflow: hidden; */
+	position: absolute;
+	width: 100%;
+	top: 135mm;
+}
+.row-3 {
+/*	overflow: hidden; */
+	position: absolute;
+	width: 100%;
+	top: 155mm;
+}
+.row-4 {
+/*	overflow: hidden; */
+	position: absolute;
+	width: 100%;
+	top: 195mm;
+}
+img {
+/*	display: inline-block; */
+	/*	overflow: hidden; */
+	width: 297mm;
+	height: 210mm;
+}
+.txt-name {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 56px;
+	font-weight: normal;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	top: 45mm;
+}
+.txt-event {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 36px;
+	font-weight: normal;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	top: 65mm;
+}
+.txt-date {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 28px;
+	font-weight: lighter;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	top: 85mm;
+}
+.txt-bracket {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	top: 105mm;
+}
+.txt-bib {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	top: 115mm;
+}
+.column-left {
+	float: left;
+	width: 33%;
+	text-align: center;
+	top: 15mm;
+}
+.column-center {
+	float: left;
+	width: 33%;
+	text-align: center;
+	top: 15mm;
+}
+.column-right {
+	float: right;
+	width: 33%;
+	text-align: center;
+	top: 15mm;
+}
+.divider-space {
+	position: relative;
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+}

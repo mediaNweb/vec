@@ -1,0 +1,107 @@
+<?php
+// Heading
+$_['heading_title']             = 'Configuraciones';
+
+// Text
+$_['text_success']              = 'Usted ha modificado las Configuraciones';
+$_['text_image_manager']        = 'Administrador de Im&aacute;genes';
+$_['text_mail']                 = 'Mail';
+$_['text_smtp']                 = 'SMTP';
+
+// Entry
+$_['entry_name']                = 'Nombre del Sitio:';
+$_['entry_owner']               = 'Responsable:';
+$_['entry_address']             = 'Direcci&oacute;n:';
+$_['entry_email']               = 'Correo Electr&oacute;nico:';
+$_['entry_telephone']           = 'Tel&eacute;fono:';
+$_['entry_fax']                 = 'Fax:';
+$_['entry_title']               = 'T&iacute;tulo:';
+$_['entry_meta_description']    = 'Meta Tag Descripci&oacute;n:';
+$_['entry_layout']              = 'Default Layout:';
+$_['entry_template']            = 'Template:';
+$_['entry_country']             = 'Pa&iacute;s:';
+$_['entry_zone']                = 'Estado:';
+$_['entry_language']            = 'Idioma:';
+$_['entry_admin_language']      = 'Idioma de Administraci&oacute;n:';
+$_['entry_currency']            = 'Moneda:<br /><span class="help">Cambia la moneda por defecto. Limpie la memoria cache de su navegador para ver el cambio y volver a crear la cookie.</span>';
+$_['entry_currency_auto']       = 'Actualizar Moneda Autom&aacute;ticamente:<br /><span class="help">Configurar para actualizar la moneda diariamente de forma autom&aacute;tica.</span>';
+$_['entry_length_class']        = 'Length Class:';
+$_['entry_weight_class']        = 'Weight Class:';
+$_['entry_catalog_limit'] 	    = 'Default Items Per Page (Catalog):<br /><span class="help">Determines how many catalog items are shown per page (products, categories, etc)</span>';
+$_['entry_admin_limit']   	    = 'Default Items Per Page (Admin):<br /><span class="help">Determines how many admin items are shown per page (orders, customers, etc)</span>';
+$_['entry_impuesto']            = 'Mostrar Precios con Impuesto:';
+$_['entry_invoice']             = 'Invoice Start No.:<br /><span class="help">Set the starting number the invoices will begin from.</span>';
+$_['entry_invoice_prefix']      = 'Pref&iacute;jo de Facturas:<br /><span class="help">La numeraci&oacute;n de las facturas comenzar&aacute;n por 1 para cada pref&iacute;jo &uacute;nico</span>';
+$_['entry_customer_group']      = 'Customer Group:<br /><span class="help">Default customer group.</span>';
+$_['entry_customer_price']      = 'Login Display Prices:<br /><span class="help">Only show prices when a customer is logged in.</span>';
+$_['entry_customer_approval']   = 'Approve New Customers:<br /><span class="help">Don\'t allow new customer to login until their account has been approved.</span>';
+$_['entry_guest_checkout']      = 'Guest Checkout:<br /><span class="help">Allow customers to checkout without creating an account. This will not be available when a downloadable product is in the shopping cart.</span>';
+$_['entry_account']             = 'Account Terms:<br /><span class="help">Forces people to agree to terms before an account can be created.</span>';
+$_['entry_checkout']            = 'Checkout Terms:<br /><span class="help">Forces people to agree to terms before an a customer can checkout.</span>';
+$_['entry_affiliate']           = 'Affiliate Terms:<br /><span class="help">Forces people to agree to terms before an affiliate account can be created.</span>';
+$_['entry_commission']          = 'Affiliate Commission (%):<br /><span class="help">The default affiliate commission percentage.</span>';
+$_['entry_stock_display']       = 'Mostrar Stock:<br /><span class="help">Muestra la cantidad de cupos en la p&aacute;gina del evento.</span>';
+$_['entry_stock_warning']       = 'Mostrar Advertencia de Cupos Terminados:<br /><span class="help">Esta advertencia es mostrada en la p&aacute;gina de solicitudes en caso de que alg&uacute;n evento no tenga cupos disponibles.</span>';
+$_['entry_stock_checkout']      = 'Stock Checkout:<br /><span class="help">Allow customers to still checkout if the products they are ordering are not in stock.</span>';
+$_['entry_stock_status']        = 'Out of Stock Status:<br /><span class="help">Set the default out of stock status selected in product edit.</span>';
+$_['entry_order_status']        = 'Status del Pedido Pendiente:<br /><span class="help">Status por defecto de las solicitudes procesadas.</span>';
+$_['entry_complete_status']     = 'Status del Pedido Completado:<br /><span class="help">Set the order status the customers order must reach before they are allowed to access their downloadable products and gift vouchers.</span>';
+$_['entry_return_status']       = 'Return Status:<br /><span class="help">Set the default return status when an returns request is enviarted.</span>';
+$_['entry_review']       	    = 'Allow Reviews:<br /><span class="help">Enable/Disable new review entry and display of existing reviews</span>';
+$_['entry_download']            = 'Allow Downloads:';
+$_['entry_upload_allowed']      = 'Allowed Upload File Extensions:<br /><span class="help">Add which file extensions are allowed to be uploaded. Use comma separated values.</span>';
+$_['entry_cart_weight']         = 'Display Weight on Cart Page:<br /><span class="help">Show the cart weight on the cart page</span>';
+$_['entry_logo']                = 'S&iacute;tio Logo:';
+$_['entry_icon']                = 'Icon:<br /><span class="help">The icon should be a PNG that is 16px x 16px.</span>';
+$_['entry_image_thumb']         = 'Product Image Thumb Size:';
+$_['entry_image_popup']         = 'Product Image Popup Size:';
+$_['entry_image_product']       = 'Product List Size:';
+$_['entry_image_category']      = 'Category List Size:';
+$_['entry_image_manufacturer']  = 'Manufacturer List Size:';
+$_['entry_image_additional']    = 'Additional Product Image Size:';
+$_['entry_image_related']       = 'Related Product Image Size:';
+$_['entry_image_compare']       = 'Compare Image Size:';
+$_['entry_image_wishlist']      = 'Wish List Image Size:';
+$_['entry_image_cart']          = 'Cart Image Size:';
+$_['entry_mail_protocol']       = 'Protocolo de Correo Electr&oacute;nico:<span class="help">Elija \'Mail\' a menos que el host tenga deshabilitada la funci&oacute;n mail en php.';
+$_['entry_mail_parameter']      = 'Parametros de Correo Electr&oacute;nico:<span class="help">Cuando se utiliza \'Mail\', se pueden colocar parametros adicionales de correo electr&oacute;nico aqu&iacute; (ej: "correo@hipereventos.com".';
+$_['entry_smtp_host']           = 'SMTP Host:';
+$_['entry_smtp_username']       = 'SMTP Username:';
+$_['entry_smtp_contrase&ntilde;a']       = 'SMTP Contrase&ntilde;a:';
+$_['entry_smtp_port']           = 'SMTP Port:';
+$_['entry_smtp_timeout']        = 'SMTP Timeout:';
+$_['entry_account_mail']        = 'New Account Alert Correo Electr&oacute;nico:<br /><span class="help">Send a email to the store owner when a new account is registered.</span>';
+$_['entry_alert_mail']          = 'New Order Alert Correo Electr&oacute;nico:<br /><span class="help">Send a email to the store owner when a new order is created.</span>';
+$_['entry_alert_emails']        = 'Additional Alert Correo Electr&oacute;nicos:<br /><span class="help">Any additional emails you want to receive the alert email, in addition to the main store email. (comma separated)</span>';
+$_['entry_use_ssl']             = 'Use SSL:<br /><span class="help">To use SSL check with your host if a SSL certificate is installed and added the SSL URL to the catalog and admin config files.</span>';
+$_['entry_seo_url']             = 'Use SEO URL\'s:<br /><span class="help">To use SEO URL\'s apache module mod-rewrite must be installed and you need to rename the htaccess.txt to .htaccess.</span>';
+$_['entry_maintenance']         = 'Maintenance Mode:<br /><span class="help">Prevents customers from browsing your store. They will instead see a maintenance message. If logged in as admin, you will see the store as normal.</span>';
+$_['entry_encryption']          = 'Encryption Key:<br /><span class="help">Please provide a secret key that will be used to encrypt private information when processing orders.</span>';
+$_['entry_compression']         = 'Output Compression Level:<br /><span class="help">GZIP for more efficient transfer to requesting clients. Compression level must be between 0 - 9</span>';
+$_['entry_error_display']       = 'Display Errors:';
+$_['entry_error_log']           = 'Log Errors:';
+$_['entry_error_filename']      = 'Error Log Filename:';
+$_['entry_google_analytics']    = 'Google Analytics Code:<br /><span class="help">Login to your <a onclick="window.open(\'http://www.google.com/analytics/\');"><u>Google Analytics</u></a> account and after creating your web site profile copy and paste the analytics code into this field.</span>';
+
+// Error
+$_['error_warning']             = 'Advertencia: Please check the form carefully for errors!';
+$_['error_permission']          = 'Advertencia: Usted no tiene los permisos para modificar settings!';
+$_['error_name']                = 'Nombre del Sitio must be between 3 and 32 caract&eacute;res';
+$_['error_owner']               = 'Responsable must be between 3 and 64 caract&eacute;res';
+$_['error_address']             = 'S&iacute;tio Direcci&oacute;n must be between 10 and 256 caract&eacute;res';
+$_['error_email']               = 'Correo Electr&oacute;nico Direcci&oacute;n does not appear to be valid!';
+$_['error_telephone']           = 'Tel&eacute;fono must be between 3 and 32 caract&eacute;res';
+$_['error_title']               = 'T&iacute;tulo must be between 3 and 32 caract&eacute;res';
+$_['error_limit']       	    = 'Limit required!';
+$_['error_image_thumb']         = 'Product Image Thumb Size dimensions required!';
+$_['error_image_popup']         = 'Product Image Popup Size dimensions required!';
+$_['error_image_product']       = 'Product List Size dimensions required!';
+$_['error_image_category']      = 'Category List Size dimensions required!';
+$_['error_image_manufacturer']  = 'Manufacturer List Size dimensions required!';
+$_['error_image_additional']    = 'Additional Product Image Size dimensions required!';
+$_['error_image_related']       = 'Related Product Image Size dimensions required!';
+$_['error_image_compare']       = 'Compare Image Size dimensions required!';
+$_['error_image_wishlist']      = 'Wish List Image Size dimensions required!';
+$_['error_image_cart']          = 'Cart Image Size dimensions required!';
+$_['error_error_filename']      = 'Error Log Filename required!';
+?>
