@@ -667,10 +667,6 @@ class ModelCatalogEvento extends Model
 		$handle = fopen($contenido, 'r');
 		$frow = fgetcsv($handle, 30000, ";");
 
-		echo '<pre>';
-		print_r($frow);
-		echo '</pre>';
-
 		foreach ($frow as $column) {
 			if (isset($columns) && !empty($columns)) {
 				$columns .= ', ';
@@ -679,6 +675,12 @@ class ModelCatalogEvento extends Model
 			}
 			$columns .= '`' . $column . '` varchar(250)';
 		}
+
+		echo 'Se creara la tabla: ' . $table . '<br />';
+		echo 'con las siguientes columnas: <br />';
+		echo '<pre>';
+		print_r($columns);
+		echo '</pre>';
 
 		$this->db->query("CREATE TABLE IF NOT EXISTS " . $table . " (" . $columns . ")");
 		exit(0);
