@@ -3,12 +3,7 @@ final class MySQL {
 	private $connection;
 
 	public function __construct($hostname, $username, $password, $database) {
-
-		$link = mysqli_init();
-		mysqli_options($link, MYSQLI_OPT_LOCAL_INFILE, true);
-
-//		if (!$this->connection = mysqli_connect($hostname, $username, $password)) {
-		if (!$this->connection = mysqli_real_connect($link, $hostname, $username, $password)) {
+		if (!$this->connection = mysqli_connect($hostname, $username, $password)) {
       		exit('Error: Could not make a database connection using ' . $username . '@' . $hostname);
     	}
 
