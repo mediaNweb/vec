@@ -667,6 +667,10 @@ class ModelCatalogEvento extends Model
 		$handle = fopen($contenido, 'r');
 		$frow = fgetcsv($handle, 30000, ";");
 
+		echo '<pre>';
+		print_r($frow);
+		echo '</pre>';
+
 		foreach ($frow as $column) {
 			if (isset($columns) && !empty($columns)) {
 				$columns .= ', ';
@@ -678,6 +682,9 @@ class ModelCatalogEvento extends Model
 
 		$this->db->query("CREATE TABLE IF NOT EXISTS " . $table . " (" . $columns . ")");
 		$this->db->query("LOAD DATA LOCAL INFILE '" . addslashes($contenido) . "' INTO TABLE " . $table . " FIELDS TERMINATED BY ';' IGNORE 1 LINES");
+
+		exit(0);
+
 		$this->db->query("DELETE FROM " . DB_PREFIX . "participantes WHERE id_evento = '" . (int) $eventos_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "resultados WHERE id_evento = '" . (int) $eventos_id . "'");
 
