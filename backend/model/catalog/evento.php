@@ -673,7 +673,7 @@ class ModelCatalogEvento extends Model
 			} else {
 				$columns = '';
 			}
-			$columns .= '`' . $column . '` varchar(250)';
+			$columns .= '`' . $column . '` varchar(128)';
 		}
 
 		echo 'Se creara la tabla: ' . $table . '<br />';
