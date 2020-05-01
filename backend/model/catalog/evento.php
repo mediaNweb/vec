@@ -489,7 +489,7 @@ class ModelCatalogEvento extends Model
 		fclose($handle);
 	}
 
-	public function importarResultadosEventoLento($eventos_id, $contenido)
+	public function importarResultadosEvento($eventos_id, $contenido)
 	{
 
 
@@ -660,7 +660,7 @@ class ModelCatalogEvento extends Model
 		fclose($handle);
 	}
 
-	public function importarResultadosEvento($eventos_id, $contenido)
+	public function importarResultadosEventoFAST($eventos_id, $contenido)
 	{
 
 		$table = 'import_resultados_' . $eventos_id;
