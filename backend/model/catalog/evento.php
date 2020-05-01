@@ -676,17 +676,8 @@ class ModelCatalogEvento extends Model
 			$columns .= '`' . $column . '` varchar(128)';
 		}
 
-		echo 'Se creara la tabla: ' . $table . '<br />';
-		echo 'con las siguientes columnas: <br />';
-		echo "CREATE TABLE IF NOT EXISTS " . $table . " (" . $columns . ")";
-		echo '<pre>';
-		print_r($columns);
-		echo '</pre>';
-
 		$this->db->query("CREATE TABLE IF NOT EXISTS " . $table . " (" . $columns . ")");
-		exit(0);
 		$this->db->query("LOAD DATA LOCAL INFILE '" . addslashes($contenido) . "' INTO TABLE " . $table . " FIELDS TERMINATED BY ';' IGNORE 1 LINES");
-
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "participantes WHERE id_evento = '" . (int) $eventos_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "resultados WHERE id_evento = '" . (int) $eventos_id . "'");
@@ -707,7 +698,7 @@ class ModelCatalogEvento extends Model
 
 		fclose($handle);
 
-		// $this->db->query("DROP TABLE " . $table . "");
+		$this->db->query("DROP TABLE " . $table . "");
 		//		exit(0);
 
 	}
