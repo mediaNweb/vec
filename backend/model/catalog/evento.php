@@ -697,7 +697,7 @@ class ModelCatalogEvento extends Model
 
 		fclose($handle);
 
-		$this->db->query("DROP TABLE " . $table . "");
+		// $this->db->query("DROP TABLE " . $table . "");
 		//		exit(0);
 
 	}
