@@ -54,8 +54,8 @@
   <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
   <link rel="icon" type="image/png" href="images/favicon/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="Racetimer Europe" />
-  <meta name="msapplication-TileColor" content="#BA2626" />
+  <meta name="application-name" content="&nbsp;" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png" />
   <meta name="msapplication-square70x70logo" content="images/favicon/mstile-70x70.png" />
   <meta name="msapplication-square150x150logo" content="images/favicon/mstile-150x150.png" />

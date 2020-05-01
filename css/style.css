@@ -1752,6 +1752,14 @@ a.menu-toggle span {
   background: url(../image/bg.jpg) no-repeat center center fixed;
 }
 
+.hero-form-layout #hero {
+  background: url(../image/bg.jpg) no-repeat center center fixed;
+}
+
+.app-layout #hero {
+  background: url(../image/bg.jpg) no-repeat center center fixed;
+}
+
 .hero-subscribe-layout #hero,
 .hero-form-layout #hero,
 .app-layout #hero {
@@ -1767,9 +1775,6 @@ a.menu-toggle span {
 
 .hero-content p.lead {
   margin-bottom: 13px;
-  background-color: rgba(186, 39, 39, 0.75);
-  padding: 9px;
-  display: inline;
 }
 
 .hero-content h1,
@@ -1779,11 +1784,6 @@ a.menu-toggle span {
 .hero-content h5,
 .hero-content h6 {
   color: #fff;
-}
-
-.hero-content h1 {
-  background-color: rgba(0, 0, 0, 0.75);
-  margin: 0;
 }
 
 .hero-form-layout .hero-content h2 {
@@ -2333,15 +2333,15 @@ ul.how-it-works-col li:hover:nth-child(2) .how-it-works-info:after {
 
 /* 6.2 How It Works hover background */
 ul.how-it-works-col li:first-child:hover {
-  background: url(../image/stocks/stock1.jpg) no-repeat center center;
+  background: url(../image/bg.jpg) no-repeat center center;
 }
 
 ul.how-it-works-col li:nth-child(2):hover {
-  background: url(../image/stocks/stock2.jpg) no-repeat center center;
+  background: url(../image/bg.jpg) no-repeat center center;
 }
 
 ul.how-it-works-col li:last-child:hover {
-  background: url(../image/stocks/stock3.jpg) no-repeat center center;
+  background: url(../image/bg.jpg) no-repeat center center;
 }
 
 /**
@@ -2441,7 +2441,7 @@ ul.how-it-works-col li:last-child:hover {
 
 /* 8.1 Featurettes Quote */
 .featurettes-quote-wrapper {
-  background: url(../image/stocks/stock2.jpg) no-repeat center center;
+  background: url(../image/bg.jpg) no-repeat center center;
   background-size: cover;
   height: 500px;
 }
@@ -2473,7 +2473,7 @@ ul.how-it-works-col li:last-child:hover {
   */
 
 #counter {
-  background: url(../image/stocks/stock4.jpg) no-repeat bottom center;
+  background: url(../image/bg.jpg) no-repeat bottom center;
   background-size: cover;
 }
 
@@ -2506,7 +2506,7 @@ ul.how-it-works-col li:last-child:hover {
   */
 
 #breakout {
-  background: url(../image/stocks/stock5.jpg) no-repeat center center;
+  background: url(../image/bg.jpg) no-repeat center center;
   background-size: cover !important;
 }
 
@@ -2516,7 +2516,7 @@ ul.how-it-works-col li:last-child:hover {
 
 /* 10.1 App Layout Breakout */
 .app-layout #breakout {
-  background: url(../image/stocks/stock2.jpg) no-repeat center center;
+  background: url(../image/bg.jpg) no-repeat center center;
 }
 
 .app-layout #breakout .breaking-content {
