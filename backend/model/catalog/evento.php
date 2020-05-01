@@ -668,7 +668,7 @@ class ModelCatalogEvento extends Model
 		$frow = fgetcsv($handle, 30000, ";");
 
 		echo '<pre>';
-		print_r($handle);
+		print_r($frow);
 		echo '</pre>';
 
 		foreach ($frow as $column) {
