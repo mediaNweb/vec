@@ -68,45 +68,49 @@
       </div>
       <!--/ .col-lg-3 -->
 
-      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-        <li class="price" Xdata-sr="enter bottom over 1s and move 80px wait 0.4s">
-          <h5 class="price-title"><?php echo $genero_nombre; ?> <span class="price-label"><?php echo $genero_pais; ?></span></h5>
-          <span class="best-value-label"><?php echo $text_result_col_gender; ?></span>
-          <div class="price-amount"><?php echo $genero_numero; ?></div>
-          <ul class="price-feature">
-            <li><?php echo $text_result_cell_race_title; ?> <strong><?php echo $genero_carrera; ?></strong></li>
-            <li><?php echo $text_result_cell_bracket_title; ?> <strong><?php echo $genero_categoria; ?></strong></li>
-            <li><?php echo $text_result_cell_net; ?> <strong><?php echo $genero_time_tag; ?></strong></li>
-            <li><?php echo $text_gender_result_cell_bracket; ?></li>
-            <li><?php echo $text_gender_result_cell_gender; ?></li>
-            <li><?php echo $text_gender_result_cell_overall; ?></li>
-          </ul>
-          <!--/ .price-feature -->
-          <a href="#0" class="price-button all-caps"><?php echo $genero_ritmo; ?> <?php echo $speed_unit; ?></a>
-        </li>
-        <!--/ .price -->
-      </div>
-      <!--/ .col-lg-3 -->
+      <?php if (isset($genero_nombre)) { ?>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <li class="price" Xdata-sr="enter bottom over 1s and move 80px wait 0.4s">
+            <h5 class="price-title"><?php echo $genero_nombre; ?> <span class="price-label"><?php echo $genero_pais; ?></span></h5>
+            <span class="best-value-label"><?php echo $text_result_col_gender; ?></span>
+            <div class="price-amount"><?php echo $genero_numero; ?></div>
+            <ul class="price-feature">
+              <li><?php echo $text_result_cell_race_title; ?> <strong><?php echo $genero_carrera; ?></strong></li>
+              <li><?php echo $text_result_cell_bracket_title; ?> <strong><?php echo $genero_categoria; ?></strong></li>
+              <li><?php echo $text_result_cell_net; ?> <strong><?php echo $genero_time_tag; ?></strong></li>
+              <li><?php echo $text_gender_result_cell_bracket; ?></li>
+              <li><?php echo $text_gender_result_cell_gender; ?></li>
+              <li><?php echo $text_gender_result_cell_overall; ?></li>
+            </ul>
+            <!--/ .price-feature -->
+            <a href="#0" class="price-button all-caps"><?php echo $genero_ritmo; ?> <?php echo $speed_unit; ?></a>
+          </li>
+          <!--/ .price -->
+        </div>
+        <!--/ .col-lg-3 -->
+      <?php } ?>
 
-      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-        <li class="price" Xdata-sr="enter bottom over 1s and move 80px wait 0.5s">
-          <h5 class="price-title"><?php echo $categoria_nombre; ?> <span class="price-label"><?php echo $categoria_pais; ?></span></h5>
-          <span class="best-value-label"><?php echo $text_result_col_bracket; ?></span>
-          <div class="price-amount"><?php echo $categoria_numero; ?></div>
-          <ul class="price-feature">
-            <li><?php echo $text_result_cell_race_title; ?> <strong><?php echo $categoria_carrera; ?></strong></li>
-            <li><?php echo $text_result_cell_bracket_title; ?> <strong><?php echo $categoria_categoria; ?></strong></li>
-            <li><?php echo $text_result_cell_net; ?> <strong><?php echo $categoria_time_tag; ?></strong></li>
-            <li><?php echo $text_bracket_result_cell_bracket; ?></li>
-            <li><?php echo $text_bracket_result_cell_gender; ?></li>
-            <li><?php echo $text_bracket_result_cell_overall; ?></li>
-          </ul>
-          <!--/ .price-feature -->
-          <a href="#0" class="price-button all-caps"><?php echo $categoria_ritmo; ?> <?php echo $speed_unit; ?></a>
-        </li>
-        <!--/ .price -->
-      </div>
-      <!--/ .col-lg-3 -->
+      <?php if (isset($categoria_nombre)) { ?>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <li class="price" Xdata-sr="enter bottom over 1s and move 80px wait 0.5s">
+            <h5 class="price-title"><?php echo $categoria_nombre; ?> <span class="price-label"><?php echo $categoria_pais; ?></span></h5>
+            <span class="best-value-label"><?php echo $text_result_col_bracket; ?></span>
+            <div class="price-amount"><?php echo $categoria_numero; ?></div>
+            <ul class="price-feature">
+              <li><?php echo $text_result_cell_race_title; ?> <strong><?php echo $categoria_carrera; ?></strong></li>
+              <li><?php echo $text_result_cell_bracket_title; ?> <strong><?php echo $categoria_categoria; ?></strong></li>
+              <li><?php echo $text_result_cell_net; ?> <strong><?php echo $categoria_time_tag; ?></strong></li>
+              <li><?php echo $text_bracket_result_cell_bracket; ?></li>
+              <li><?php echo $text_bracket_result_cell_gender; ?></li>
+              <li><?php echo $text_bracket_result_cell_overall; ?></li>
+            </ul>
+            <!--/ .price-feature -->
+            <a href="#0" class="price-button all-caps"><?php echo $categoria_ritmo; ?> <?php echo $speed_unit; ?></a>
+          </li>
+          <!--/ .price -->
+        </div>
+        <!--/ .col-lg-3 -->
+      <?php } ?>
 
     </ul>
     <!--/ .pricing -->

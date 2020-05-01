@@ -189,61 +189,66 @@ class ControllerEventoEvento extends Controller
 					//						$this->data['laps'] = ($vueltas != '') ? $vueltas : '-';
 
 					$resultado_general = $this->model_catalog_eventos->getResultadoGanadorGeneral($eventos_id, $carrera);
-
-					$this->data['general_cedula'] = $resultado_general['cedula'];
-					$this->data['general_nombre'] = $resultado_general['nombre'];
-					$this->data['general_numero'] = $resultado_general['numero'];
-					$this->data['general_genero'] = $resultado_general['genero'];
-					$this->data['general_categoria'] = ($resultado_general['categoria'] != '') ? $resultado_general['categoria'] : '-';
-					$this->data['general_carrera'] = ($resultado_general['carrera'] != '') ? $resultado_general['carrera'] : '-';
-					$this->data['general_pais'] = ($resultado_general['pais'] != '') ? $resultado_general['pais'] : '-';
-					$this->data['general_estado'] = ($resultado_general['estado'] != '') ? $resultado_general['estado'] : '-';
-					$this->data['general_pos_general'] = ($resultado_general['pos_general'] != '') ? $resultado_general['pos_general'] : '-';
-					$this->data['general_pos_genero'] = ($resultado_general['pos_genero'] != '') ? $resultado_general['pos_genero'] : '-';
-					$this->data['general_pos_categoria'] = ($resultado_general['pos_categoria'] != '') ? $resultado_general['pos_categoria'] : '-';
-					$this->data['general_time_tag'] = ($resultado_general['time_tag'] != '') ? $resultado_general['time_tag'] : '-';
-					$this->data['general_time_oficial'] = ($resultado_general['time_oficial'] != '') ? $resultado_general['time_oficial'] : '-';
-					$this->data['general_time_cp1'] = ($resultado_general['time_cp1'] != '') ? $resultado_general['time_cp1'] : '-';
-					$this->data['general_ritmo'] = ($resultado_general['ritmo'] != '') ? date($time_format, strtotime($resultado_general['ritmo'])) : '-';
-					//						$this->data['laps'] = ($vueltas != '') ? $vueltas : '-';
+					if ($resultado_general) {
+						$this->data['general_cedula'] = $resultado_general['cedula'];
+						$this->data['general_nombre'] = $resultado_general['nombre'];
+						$this->data['general_numero'] = $resultado_general['numero'];
+						$this->data['general_genero'] = $resultado_general['genero'];
+						$this->data['general_categoria'] = ($resultado_general['categoria'] != '') ? $resultado_general['categoria'] : '-';
+						$this->data['general_carrera'] = ($resultado_general['carrera'] != '') ? $resultado_general['carrera'] : '-';
+						$this->data['general_pais'] = ($resultado_general['pais'] != '') ? $resultado_general['pais'] : '-';
+						$this->data['general_estado'] = ($resultado_general['estado'] != '') ? $resultado_general['estado'] : '-';
+						$this->data['general_pos_general'] = ($resultado_general['pos_general'] != '') ? $resultado_general['pos_general'] : '-';
+						$this->data['general_pos_genero'] = ($resultado_general['pos_genero'] != '') ? $resultado_general['pos_genero'] : '-';
+						$this->data['general_pos_categoria'] = ($resultado_general['pos_categoria'] != '') ? $resultado_general['pos_categoria'] : '-';
+						$this->data['general_time_tag'] = ($resultado_general['time_tag'] != '') ? $resultado_general['time_tag'] : '-';
+						$this->data['general_time_oficial'] = ($resultado_general['time_oficial'] != '') ? $resultado_general['time_oficial'] : '-';
+						$this->data['general_time_cp1'] = ($resultado_general['time_cp1'] != '') ? $resultado_general['time_cp1'] : '-';
+						$this->data['general_ritmo'] = ($resultado_general['ritmo'] != '') ? date($time_format, strtotime($resultado_general['ritmo'])) : '-';
+						//						$this->data['laps'] = ($vueltas != '') ? $vueltas : '-';
+					}
 
 					$resultado_genero = $this->model_catalog_eventos->getResultadoGanadorGenero($eventos_id, $carrera, $genero);
 
-					$this->data['genero_cedula'] = $resultado_genero['cedula'];
-					$this->data['genero_nombre'] = $resultado_genero['nombre'];
-					$this->data['genero_genero'] = $resultado_genero['genero'];
-					$this->data['genero_numero'] = $resultado_genero['numero'];
-					$this->data['genero_categoria'] = ($resultado_genero['categoria'] != '') ? $resultado_genero['categoria'] : '-';
-					$this->data['genero_carrera'] = ($resultado_genero['carrera'] != '') ? $resultado_genero['carrera'] : '-';
-					$this->data['genero_pais'] = ($resultado_genero['pais'] != '') ? $resultado_genero['pais'] : '-';
-					$this->data['genero_estado'] = ($resultado_genero['estado'] != '') ? $resultado_genero['estado'] : '-';
-					$this->data['genero_pos_general'] = ($resultado_genero['pos_general'] != '') ? $resultado_genero['pos_general'] : '-';
-					$this->data['genero_pos_genero'] = ($resultado_genero['pos_genero'] != '') ? $resultado_genero['pos_genero'] : '-';
-					$this->data['genero_pos_categoria'] = ($resultado_genero['pos_categoria'] != '') ? $resultado_genero['pos_categoria'] : '-';
-					$this->data['genero_time_tag'] = ($resultado_genero['time_tag'] != '') ? $resultado_genero['time_tag'] : '-';
-					$this->data['genero_time_oficial'] = ($resultado_genero['time_oficial'] != '') ? $resultado_genero['time_oficial'] : '-';
-					$this->data['genero_time_cp1'] = ($resultado_genero['time_cp1'] != '') ? $resultado_genero['time_cp1'] : '-';
-					$this->data['genero_ritmo'] = ($resultado_genero['ritmo'] != '') ? date($time_format, strtotime($resultado_genero['ritmo'])) : '-';
-					//						$this->data['laps'] = ($vueltas != '') ? $vueltas : '-';
+					if ($resultado_genero) {
+						$this->data['genero_cedula'] = $resultado_genero['cedula'];
+						$this->data['genero_nombre'] = $resultado_genero['nombre'];
+						$this->data['genero_genero'] = $resultado_genero['genero'];
+						$this->data['genero_numero'] = $resultado_genero['numero'];
+						$this->data['genero_categoria'] = ($resultado_genero['categoria'] != '') ? $resultado_genero['categoria'] : '-';
+						$this->data['genero_carrera'] = ($resultado_genero['carrera'] != '') ? $resultado_genero['carrera'] : '-';
+						$this->data['genero_pais'] = ($resultado_genero['pais'] != '') ? $resultado_genero['pais'] : '-';
+						$this->data['genero_estado'] = ($resultado_genero['estado'] != '') ? $resultado_genero['estado'] : '-';
+						$this->data['genero_pos_general'] = ($resultado_genero['pos_general'] != '') ? $resultado_genero['pos_general'] : '-';
+						$this->data['genero_pos_genero'] = ($resultado_genero['pos_genero'] != '') ? $resultado_genero['pos_genero'] : '-';
+						$this->data['genero_pos_categoria'] = ($resultado_genero['pos_categoria'] != '') ? $resultado_genero['pos_categoria'] : '-';
+						$this->data['genero_time_tag'] = ($resultado_genero['time_tag'] != '') ? $resultado_genero['time_tag'] : '-';
+						$this->data['genero_time_oficial'] = ($resultado_genero['time_oficial'] != '') ? $resultado_genero['time_oficial'] : '-';
+						$this->data['genero_time_cp1'] = ($resultado_genero['time_cp1'] != '') ? $resultado_genero['time_cp1'] : '-';
+						$this->data['genero_ritmo'] = ($resultado_genero['ritmo'] != '') ? date($time_format, strtotime($resultado_genero['ritmo'])) : '-';
+						//						$this->data['laps'] = ($vueltas != '') ? $vueltas : '-';
+					}
 
 					$resultado_categoria = $this->model_catalog_eventos->getResultadoGanadorCategoria($eventos_id, $carrera, $categoria);
 
-					$this->data['categoria_cedula'] = $resultado_categoria['cedula'];
-					$this->data['categoria_nombre'] = $resultado_categoria['nombre'];
-					$this->data['categoria_genero'] = $resultado_categoria['genero'];
-					$this->data['categoria_numero'] = $resultado_categoria['numero'];
-					$this->data['categoria_categoria'] = ($resultado_categoria['categoria'] != '') ? $resultado_categoria['categoria'] : '-';
-					$this->data['categoria_carrera'] = ($resultado_categoria['carrera'] != '') ? $resultado_categoria['carrera'] : '-';
-					$this->data['categoria_pais'] = ($resultado_categoria['pais'] != '') ? $resultado_categoria['pais'] : '-';
-					$this->data['categoria_estado'] = ($resultado_categoria['estado'] != '') ? $resultado_categoria['estado'] : '-';
-					$this->data['categoria_pos_general'] = ($resultado_categoria['pos_general'] != '') ? $resultado_categoria['pos_general'] : '-';
-					$this->data['categoria_pos_genero'] = ($resultado_categoria['pos_genero'] != '') ? $resultado_categoria['pos_genero'] : '-';
-					$this->data['categoria_pos_categoria'] = ($resultado_categoria['pos_categoria'] != '') ? $resultado_categoria['pos_categoria'] : '-';
-					$this->data['categoria_time_tag'] = ($resultado_categoria['time_tag'] != '') ? $resultado_categoria['time_tag'] : '-';
-					$this->data['categoria_time_oficial'] = ($resultado_categoria['time_oficial'] != '') ? $resultado_categoria['time_oficial'] : '-';
-					$this->data['categoria_time_cp1'] = ($resultado_categoria['time_cp1'] != '') ? $resultado_categoria['time_cp1'] : '-';
-					$this->data['categoria_ritmo'] = ($resultado_categoria['ritmo'] != '') ? date($time_format, strtotime($resultado_categoria['ritmo'])) : '-';
-					//						$this->data['laps'] = ($vueltas != '') ? $vueltas : '-';
+					if ($resultado_categoria) {
+						$this->data['categoria_cedula'] = $resultado_categoria['cedula'];
+						$this->data['categoria_nombre'] = $resultado_categoria['nombre'];
+						$this->data['categoria_genero'] = $resultado_categoria['genero'];
+						$this->data['categoria_numero'] = $resultado_categoria['numero'];
+						$this->data['categoria_categoria'] = ($resultado_categoria['categoria'] != '') ? $resultado_categoria['categoria'] : '-';
+						$this->data['categoria_carrera'] = ($resultado_categoria['carrera'] != '') ? $resultado_categoria['carrera'] : '-';
+						$this->data['categoria_pais'] = ($resultado_categoria['pais'] != '') ? $resultado_categoria['pais'] : '-';
+						$this->data['categoria_estado'] = ($resultado_categoria['estado'] != '') ? $resultado_categoria['estado'] : '-';
+						$this->data['categoria_pos_general'] = ($resultado_categoria['pos_general'] != '') ? $resultado_categoria['pos_general'] : '-';
+						$this->data['categoria_pos_genero'] = ($resultado_categoria['pos_genero'] != '') ? $resultado_categoria['pos_genero'] : '-';
+						$this->data['categoria_pos_categoria'] = ($resultado_categoria['pos_categoria'] != '') ? $resultado_categoria['pos_categoria'] : '-';
+						$this->data['categoria_time_tag'] = ($resultado_categoria['time_tag'] != '') ? $resultado_categoria['time_tag'] : '-';
+						$this->data['categoria_time_oficial'] = ($resultado_categoria['time_oficial'] != '') ? $resultado_categoria['time_oficial'] : '-';
+						$this->data['categoria_time_cp1'] = ($resultado_categoria['time_cp1'] != '') ? $resultado_categoria['time_cp1'] : '-';
+						$this->data['categoria_ritmo'] = ($resultado_categoria['ritmo'] != '') ? date($time_format, strtotime($resultado_categoria['ritmo'])) : '-';
+						//						$this->data['laps'] = ($vueltas != '') ? $vueltas : '-';
+					}
 
 					$this->data['text_result_instamagazine']		= sprintf($this->language->get('text_result_instamagazine'), $nombre);
 					$this->data['text_result_instamagazine_link']	= $this->language->get('text_result_instamagazine_link');
@@ -259,15 +264,25 @@ class ControllerEventoEvento extends Controller
 					$this->data['text_athlete_result_cell_bracket']	= sprintf($this->language->get('text_result_cell_bracket'), $pos_categoria, $total_categoria, $categoria);
 					$this->data['text_athlete_result_cell_gender']	= sprintf($this->language->get('text_result_cell_gender'), $pos_genero, $total_genero, $genero_descripcion);
 					$this->data['text_athlete_result_cell_overall']	= sprintf($this->language->get('text_result_cell_overall'), $pos_general, $total_absolutos);
-					$this->data['text_overall_result_cell_bracket']	= sprintf($this->language->get('text_result_cell_bracket'), $resultado_general['pos_categoria'], $total_categoria, $categoria);
-					$this->data['text_overall_result_cell_gender']	= sprintf($this->language->get('text_result_cell_gender'), $resultado_general['pos_genero'], $total_genero, $genero_descripcion);
-					$this->data['text_overall_result_cell_overall']	= sprintf($this->language->get('text_result_cell_overall'), $resultado_general['pos_general'], $total_absolutos);
-					$this->data['text_gender_result_cell_bracket']	= sprintf($this->language->get('text_result_cell_bracket'), $resultado_genero['pos_categoria'], $total_categoria, $categoria);
-					$this->data['text_gender_result_cell_gender']	= sprintf($this->language->get('text_result_cell_gender'), $resultado_genero['pos_genero'], $total_genero, $genero_descripcion);
-					$this->data['text_gender_result_cell_overall']	= sprintf($this->language->get('text_result_cell_overall'), $resultado_genero['pos_general'], $total_absolutos);
-					$this->data['text_bracket_result_cell_bracket']	= sprintf($this->language->get('text_result_cell_bracket'), $resultado_categoria['pos_categoria'], $total_categoria, $categoria);
-					$this->data['text_bracket_result_cell_gender']	= sprintf($this->language->get('text_result_cell_gender'), $resultado_categoria['pos_genero'], $total_genero, $genero_descripcion);
-					$this->data['text_bracket_result_cell_overall']	= sprintf($this->language->get('text_result_cell_overall'), $resultado_categoria['pos_general'], $total_absolutos);
+
+					if ($resultado_general) {
+						$this->data['text_overall_result_cell_bracket']	= sprintf($this->language->get('text_result_cell_bracket'), $resultado_general['pos_categoria'], $total_categoria, $categoria);
+						$this->data['text_overall_result_cell_gender']	= sprintf($this->language->get('text_result_cell_gender'), $resultado_general['pos_genero'], $total_genero, $genero_descripcion);
+						$this->data['text_overall_result_cell_overall']	= sprintf($this->language->get('text_result_cell_overall'), $resultado_general['pos_general'], $total_absolutos);
+					}
+
+					if ($resultado_genero) {
+						$this->data['text_gender_result_cell_bracket']	= sprintf($this->language->get('text_result_cell_bracket'), $resultado_genero['pos_categoria'], $total_categoria, $categoria);
+						$this->data['text_gender_result_cell_gender']	= sprintf($this->language->get('text_result_cell_gender'), $resultado_genero['pos_genero'], $total_genero, $genero_descripcion);
+						$this->data['text_gender_result_cell_overall']	= sprintf($this->language->get('text_result_cell_overall'), $resultado_genero['pos_general'], $total_absolutos);
+					}
+
+					if ($resultado_categoria) {
+						$this->data['text_bracket_result_cell_bracket']	= sprintf($this->language->get('text_result_cell_bracket'), $resultado_categoria['pos_categoria'], $total_categoria, $categoria);
+						$this->data['text_bracket_result_cell_gender']	= sprintf($this->language->get('text_result_cell_gender'), $resultado_categoria['pos_genero'], $total_genero, $genero_descripcion);
+						$this->data['text_bracket_result_cell_overall']	= sprintf($this->language->get('text_result_cell_overall'), $resultado_categoria['pos_general'], $total_absolutos);
+					}
+
 					$this->data['speed_unit']						= $this->language->get('speed_unit');
 					$this->data['text_result_certificate']			= $this->language->get('text_result_certificate');
 					$this->data['text_result_certificate_link']		= $this->language->get('text_result_certificate_link');

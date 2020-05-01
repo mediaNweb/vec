@@ -479,8 +479,8 @@ class ModelCatalogEvento extends Model
 		$handle = fopen($contenido, 'r');
 		while (($data_csv = fgetcsv($handle, 1000, ';')) !== FALSE) {
 			/* Var cleaning */
-			$data_csv[0] = trim(chop(mysql_real_escape_string($data_csv[0])));
-			$data_csv[1] = trim(chop(mysql_real_escape_string($data_csv[1])));
+			$data_csv[0] = trim(chop(mysqli_real_escape_string($data_csv[0])));
+			$data_csv[1] = trim(chop(mysqli_real_escape_string($data_csv[1])));
 
 			if ((preg_match("/^([0-9]+)$/", $data_csv[0])) and (preg_match("/^(0?\d|1[0-2]):([0-5]\d):([0-5]\d)$/", $data_csv[1]))) {
 				$this->db->query("INSERT INTO " . DB_PREFIX . "eventos_tiempos SET eventos_tiempos_id_evento = '" . (int) $eventos_id . "', eventos_tiempos_id_cliente = '" . $data_csv[0] . "', eventos_tiempos_tiempo = '" . $data_csv[1] . "'");
@@ -489,69 +489,144 @@ class ModelCatalogEvento extends Model
 		fclose($handle);
 	}
 
-	public function importarResultadosEventoLento($eventos_id, $contenido)
+	public function importarResultadosEvento($eventos_id, $contenido)
 	{
 
+		/*
+		$table = 'import_resultados_' . $eventos_id;
+		$handle = fopen($contenido, 'r');
+		$frow = fgetcsv($handle, 30000, ";");
+
+		foreach ($frow as $column) {
+			if (isset($columns) && !empty($columns)) {
+				$columns .= ', ';
+			} else {
+				$columns = '';
+			}
+			$columns .= '`' . $column . '` varchar(128)';
+		}
+
+		/*
+		$this->db->query("CREATE TABLE IF NOT EXISTS " . $table . " (" . $columns . ")");
+*/
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "participantes WHERE id_evento = '" . (int) $eventos_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "resultados WHERE id_evento = '" . (int) $eventos_id . "'");
+		/*
+		[0] => EXTERNAL_ID
+		[1] => FIRST_NAME
+		[2] => LAST_NAME
+		[3] => BIB
+		[4] => GENDER
+		[5] => PRIMARY_BRACKET
+		[6] => REG_CHOICE
+		[7] => COUNTRY_CODE
+		[8] => REGION_NAME
+		[9] => RACE_AGE
+		[10] => DOB
+		[11] => TEAM_NAME
+		[12] => OVERALL_RANK
+		[13] => GENDER_RANK
+		[14] => PRIMARY_BRACKET_RANK
+		[15] => GUN_FINISH_TIME
+		[16] => FINISH_NET_TIME
+		[17] => FINISH_NET_PACE
+		[18] => LAPS
+		[19] => JPG_URL
+		[20] => DIRECT_RESULT_LINK
+		[21] => SPLIT 1 NET TIME
+		[22] => SPLIT 2 NET TIME
+		[23] => SPLIT 3 NET TIME
+		[24] => SPLIT 4 NET TIME
+		[25] => SPLIT 5 NET TIME
+		[26] => SPLIT 6 NET TIME
+		[27] => SPLIT 7 NET TIME
+		[28] => SPLIT 8 NET TIME
+		[29] => SPLIT 9 NET TIME
+		[30] => SPLIT 10 NET TIME
+		[31] => SPLIT 11 NET TIME
+		[32] => SPLIT 12 NET TIME
+		[33] => SPLIT 13 NET TIME
+		[34] => SPLIT 14 NET TIME
+		[35] => SPLIT 15 NET TIME
+*/
 
 		/* Participantes */
 		/*
 0 = Cedula
 1 = Nombre
-2 = Numero
-3 = Genero
-4 = Categoria
-5 = Carrera
-6 = Pais
-7 = Estado
-8 = Edad
-9 = Nacimiento
-10 = Equipo
+2 = Apellido
+3 = Numero
+4 = Genero
+5 = Categoria
++ = Carrera
+7 = Pais
+9 = Estado
+9 = Edad
+10 = Nacimiento
+11 = Equipo
 */
+
 		$handle = fopen($contenido, 'r');
 		fgetcsv($handle, 30000, ";");
 		while (($data_csv = fgetcsv($handle, 30000, ';')) !== FALSE) {
 			/* Var cleaning */
-			$data_csv[0] = trim(chop(mysql_real_escape_string($data_csv[0])));
-			$data_csv[1] = trim(chop(mysql_real_escape_string($data_csv[1])));
-			$data_csv[2] = trim(chop(mysql_real_escape_string($data_csv[2])));
-			$data_csv[3] = trim(chop(mysql_real_escape_string($data_csv[3])));
-			$data_csv[4] = trim(chop(mysql_real_escape_string($data_csv[4])));
-			$data_csv[5] = trim(chop(mysql_real_escape_string($data_csv[5])));
-			$data_csv[6] = trim(chop(mysql_real_escape_string($data_csv[6])));
-			$data_csv[7] = trim(chop(mysql_real_escape_string($data_csv[7])));
-			$data_csv[8] = trim(chop(mysql_real_escape_string($data_csv[8])));
-			$data_csv[9] = trim(chop(mysql_real_escape_string($data_csv[9])));
-			$data_csv[10] = trim(chop(mysql_real_escape_string($data_csv[10])));
-			$data_csv[11] = trim(chop(mysql_real_escape_string($data_csv[11])));
-			$data_csv[12] = trim(chop(mysql_real_escape_string($data_csv[12])));
-			$data_csv[13] = trim(chop(mysql_real_escape_string($data_csv[13])));
-			$data_csv[14] = trim(chop(mysql_real_escape_string($data_csv[14])));
-			$data_csv[15] = trim(chop(mysql_real_escape_string($data_csv[15])));
-			$data_csv[16] = trim(chop(mysql_real_escape_string($data_csv[16])));
-			$data_csv[17] = trim(chop(mysql_real_escape_string($data_csv[17])));
+			$data_csv[0] = trim(chop($this->db->escape($data_csv[0])));
+			$data_csv[1] = trim(chop($this->db->escape($data_csv[1])));
+			$data_csv[2] = trim(chop($this->db->escape($data_csv[2])));
+			$data_csv[3] = trim(chop($this->db->escape($data_csv[3])));
+			$data_csv[4] = trim(chop($this->db->escape($data_csv[4])));
+			$data_csv[5] = trim(chop($this->db->escape($data_csv[5])));
+			$data_csv[6] = trim(chop($this->db->escape($data_csv[6])));
+			$data_csv[7] = trim(chop($this->db->escape($data_csv[7])));
+			$data_csv[8] = trim(chop($this->db->escape($data_csv[8])));
+			$data_csv[9] = trim(chop($this->db->escape($data_csv[9])));
+			$data_csv[10] = trim(chop($this->db->escape($data_csv[10])));
+			$data_csv[11] = trim(chop($this->db->escape($data_csv[11])));
+			$data_csv[12] = trim(chop($this->db->escape($data_csv[12])));
+			$data_csv[13] = trim(chop($this->db->escape($data_csv[13])));
+			$data_csv[14] = trim(chop($this->db->escape($data_csv[14])));
+			$data_csv[15] = trim(chop($this->db->escape($data_csv[15])));
+			$data_csv[16] = trim(chop($this->db->escape($data_csv[16])));
+			$data_csv[17] = trim(chop($this->db->escape($data_csv[17])));
+			$data_csv[18] = trim(chop($this->db->escape($data_csv[18])));
+			$data_csv[19] = trim(chop($this->db->escape($data_csv[19])));
+			$data_csv[20] = trim(chop($this->db->escape($data_csv[20])));
+			$data_csv[21] = trim(chop($this->db->escape($data_csv[21])));
+			$data_csv[22] = trim(chop($this->db->escape($data_csv[22])));
+			$data_csv[23] = trim(chop($this->db->escape($data_csv[23])));
+			$data_csv[24] = trim(chop($this->db->escape($data_csv[24])));
+			$data_csv[25] = trim(chop($this->db->escape($data_csv[25])));
+			$data_csv[26] = trim(chop($this->db->escape($data_csv[26])));
+			$data_csv[27] = trim(chop($this->db->escape($data_csv[27])));
+			$data_csv[28] = trim(chop($this->db->escape($data_csv[28])));
+			$data_csv[29] = trim(chop($this->db->escape($data_csv[29])));
+			$data_csv[30] = trim(chop($this->db->escape($data_csv[30])));
+			$data_csv[31] = trim(chop($this->db->escape($data_csv[31])));
+			$data_csv[32] = trim(chop($this->db->escape($data_csv[32])));
+			$data_csv[33] = trim(chop($this->db->escape($data_csv[33])));
+			$data_csv[34] = trim(chop($this->db->escape($data_csv[34])));
+			$data_csv[35] = trim(chop($this->db->escape($data_csv[35])));
 
-			$sql_participantes = "INSERT INTO " . DB_PREFIX . "participantes SET id_evento = '" . (int) $eventos_id . "', cedula = '" . $data_csv[0] . "', nombre = '" . $data_csv[1] . "', numero = '" . $data_csv[2] . "', genero = '" . $data_csv[3] . "', categoria = '" . $data_csv[4] . "', carrera = '" . $data_csv[5] . "', fdum = NOW()";
+			$sql_participantes = "INSERT INTO " . DB_PREFIX . "participantes SET id_evento = '" . (int) $eventos_id . "', cedula = '" . $data_csv[0] . "', nombre = '" . $data_csv[1] . "', apellido = '" . $data_csv[2] . "', numero = '" . $data_csv[3] . "', genero = '" . $data_csv[4] . "', categoria = '" . $data_csv[5] . "', carrera = '" . $data_csv[6] . "', fdum = NOW()";
 
-			if (!empty($data_csv[6])) {
+			if (!empty($data_csv[7])) {
 				$sql_participantes .= ", pais = '" . $data_csv[6] . "'";
 			}
 
-			if (!empty($data_csv[7])) {
+			if (!empty($data_csv[8])) {
 				$sql_participantes .= ", estado = '" . $data_csv[7] . "'";
 			}
 
-			if (!empty($data_csv[8])) {
+			if (!empty($data_csv[9])) {
 				$sql_participantes .= ", edad = '" . $data_csv[8] . "'";
 			}
 
-			if (!empty($data_csv[9])) {
+			if (!empty($data_csv[10])) {
 				$sql_participantes .= ", fdn = '" . $data_csv[9] . "'";
 			}
 
-			if (!empty($data_csv[10])) {
+			if (!empty($data_csv[11])) {
 				$sql_participantes .= ", equipo = '" . $data_csv[10] . "'";
 			}
 
@@ -559,99 +634,109 @@ class ModelCatalogEvento extends Model
 
 			/* Resultados */
 			/*
-2 = Numero
-11 = Posicion General
-12 = Posicion por Genero
-13 = Posicion por Categoria
-14 = Tiempo Oficial
-15 = Tiempo Tag
-16 = Ritmo
-17 = Vueltas
-18 = Punto Control 1
-19 = Punto Control 2
-20 = Punto Control 3
-21 = Punto Control 4
-22 = Punto Control 5
-23 = Punto Control 6
-24 = Punto Control 7
-25 = Punto Control 8
-26 = Punto Control 9
-27 = Punto Control 10
-28 = Punto Control 11
-29 = Punto Control 12
-30 = Punto Control 13
-31 = Punto Control 15
-32 = Punto Control 16
+3 = Numero
+12 = Posicion General
+13 = Posicion por Genero
+14 = Posicion por Categoria
+15 = Tiempo Oficial
+16 = Tiempo Tag
+17 = Ritmo
+18 = Vueltas
+19 = URL Foto
+20 = URL Resultado
+21 = Punto Control 1
+22 = Punto Control 2
+23 = Punto Control 3
+24 = Punto Control 4
+25 = Punto Control 5
+26 = Punto Control 6
+27 = Punto Control 7
+28 = Punto Control 8
+29 = Punto Control 9
+30 = Punto Control 10
+31 = Punto Control 11
+32 = Punto Control 12
+33 = Punto Control 13
+34 = Punto Control 14
+35 = Punto Control 15
 */
 
-			$sql_resultados = "INSERT INTO " . DB_PREFIX . "resultados SET id_evento = '" . (int) $eventos_id . "', numero = '" . $data_csv[2] . "', pos_general = '" . $data_csv[11] . "', pos_genero = '" . $data_csv[12] . "', pos_categoria = '" . $data_csv[13] . "', time_oficial = '" . $data_csv[14] . "', time_tag = '" . $data_csv[15] . "', fdum = NOW()";
-
-			if (!empty($data_csv[16])) {
-				$sql_resultados .= ", ritmo = '" . $data_csv[16] . "'";
-			}
+			$sql_resultados = "INSERT INTO " . DB_PREFIX . "resultados SET id_evento = '" . (int) $eventos_id . "', numero = '" . $data_csv[3] . "', pos_general = '" . $data_csv[12] . "', pos_genero = '" . $data_csv[13] . "', pos_categoria = '" . $data_csv[14] . "', time_oficial = '" . $data_csv[15] . "', time_tag = '" . $data_csv[16] . "', fdum = NOW()";
 
 			if (!empty($data_csv[17])) {
-				$sql_resultados .= ", vueltas = '" . $data_csv[17] . "'";
+				$sql_resultados .= ", ritmo = '" . $data_csv[17] . "'";
 			}
 
 			if (!empty($data_csv[18])) {
-				$sql_resultados .= ", time_cp1 = '" . $data_csv[18] . "'";
+				$sql_resultados .= ", vueltas = '" . $data_csv[18] . "'";
 			}
 
 			if (!empty($data_csv[19])) {
-				$sql_resultados .= ", time_cp2 = '" . $data_csv[19] . "'";
+				$sql_resultados .= ", jpg_url = '" . $data_csv[19] . "'";
 			}
 
 			if (!empty($data_csv[20])) {
-				$sql_resultados .= ", time_cp3 = '" . $data_csv[20] . "'";
+				$sql_resultados .= ", result_link = '" . $data_csv[20] . "'";
 			}
 
 			if (!empty($data_csv[21])) {
-				$sql_resultados .= ", time_cp4 = '" . $data_csv[21] . "'";
+				$sql_resultados .= ", time_cp1 = '" . $data_csv[21] . "'";
 			}
 
 			if (!empty($data_csv[22])) {
-				$sql_resultados .= ", time_cp5 = '" . $data_csv[22] . "'";
+				$sql_resultados .= ", time_cp2 = '" . $data_csv[22] . "'";
 			}
 
 			if (!empty($data_csv[23])) {
-				$sql_resultados .= ", time_cp6 = '" . $data_csv[23] . "'";
+				$sql_resultados .= ", time_cp3 = '" . $data_csv[23] . "'";
 			}
 
 			if (!empty($data_csv[24])) {
-				$sql_resultados .= ", time_cp7 = '" . $data_csv[24] . "'";
+				$sql_resultados .= ", time_cp4 = '" . $data_csv[24] . "'";
 			}
 
 			if (!empty($data_csv[25])) {
-				$sql_resultados .= ", time_cp8 = '" . $data_csv[25] . "'";
+				$sql_resultados .= ", time_cp5 = '" . $data_csv[25] . "'";
 			}
 
 			if (!empty($data_csv[26])) {
-				$sql_resultados .= ", time_cp9 = '" . $data_csv[26] . "'";
+				$sql_resultados .= ", time_cp6 = '" . $data_csv[26] . "'";
 			}
 
 			if (!empty($data_csv[27])) {
-				$sql_resultados .= ", time_cp10 = '" . $data_csv[27] . "'";
+				$sql_resultados .= ", time_cp7 = '" . $data_csv[27] . "'";
 			}
 
 			if (!empty($data_csv[28])) {
-				$sql_resultados .= ", time_cp11 = '" . $data_csv[28] . "'";
+				$sql_resultados .= ", time_cp8 = '" . $data_csv[28] . "'";
 			}
 
 			if (!empty($data_csv[29])) {
-				$sql_resultados .= ", time_cp12 = '" . $data_csv[29] . "'";
+				$sql_resultados .= ", time_cp9 = '" . $data_csv[29] . "'";
 			}
 
 			if (!empty($data_csv[30])) {
-				$sql_resultados .= ", time_cp13 = '" . $data_csv[30] . "'";
+				$sql_resultados .= ", time_cp10 = '" . $data_csv[30] . "'";
 			}
 
 			if (!empty($data_csv[31])) {
-				$sql_resultados .= ", time_cp14 = '" . $data_csv[31] . "'";
+				$sql_resultados .= ", time_cp11 = '" . $data_csv[31] . "'";
 			}
 
 			if (!empty($data_csv[32])) {
-				$sql_resultados .= ", time_cp15 = '" . $data_csv[32] . "'";
+				$sql_resultados .= ", time_cp12 = '" . $data_csv[32] . "'";
+			}
+
+			if (!empty($data_csv[33])) {
+				$sql_resultados .= ", time_cp13 = '" . $data_csv[33] . "'";
+			}
+
+			if (!empty($data_csv[34])) {
+				$sql_resultados .= ", time_cp14 = '" . $data_csv[34] . "'";
+			}
+
+			if (!empty($data_csv[35])) {
+				$sql_resultados .= ", time_cp15 = '" . $data_csv[35] . "'";
 			}
 
 			$query = $this->db->query($sql_resultados);
@@ -660,7 +745,7 @@ class ModelCatalogEvento extends Model
 		fclose($handle);
 	}
 
-	public function importarResultadosEvento($eventos_id, $contenido)
+	public function importarResultadosEventoFAST($eventos_id, $contenido)
 	{
 
 		$table = 'import_resultados_' . $eventos_id;

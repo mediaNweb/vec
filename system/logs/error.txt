@@ -1,0 +1,289 @@
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 533
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 534
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 535
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 536
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 537
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 538
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 539
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 540
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 541
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 542
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 543
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 544
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 545
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 546
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 547
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 548
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 549
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 550
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 551
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 552
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 553
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 554
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 555
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 556
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 557
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 558
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 559
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 560
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 561
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 562
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 563
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 564
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 565
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 533
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 534
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 535
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 536
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 537
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 538
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 539
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 540
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 541
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 542
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 543
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 544
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 545
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 546
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 547
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 548
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 549
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 550
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 551
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 552
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 553
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 554
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 555
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 556
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 557
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 558
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 559
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 560
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 561
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 562
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 563
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 564
+2020-05-01 18:48:27 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, object given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 565
+2020-05-01 18:48:27 - PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\racetimer\backend\index.php:79) in C:\inetpub\wwwroot\racetimer\system\engine\controller.php on line 28
+2020-05-01 18:48:27 - PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\racetimer\backend\index.php:79) in C:\inetpub\wwwroot\racetimer\system\engine\controller.php on line 29
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 533
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 533
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 534
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 534
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 535
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 535
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 536
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 536
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 537
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 537
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 538
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 538
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 539
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 539
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 540
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 540
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 541
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 541
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 542
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 542
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 543
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 543
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 544
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 544
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 545
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 545
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 546
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 546
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 547
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 547
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 548
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 548
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 549
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 549
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 550
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 550
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 551
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 551
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 552
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 552
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 553
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 553
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 554
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 554
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 555
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 555
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 556
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 556
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 557
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 557
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 558
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 558
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 559
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 559
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 560
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 560
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 561
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 561
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 562
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 562
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 563
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 563
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 564
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 564
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 565
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 565
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 533
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 533
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 534
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 534
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 535
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 535
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 536
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 536
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 537
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 537
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 538
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 538
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 539
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 539
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 540
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 540
+2020-05-01 18:52:21 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 541
+2020-05-01 18:52:21 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 541
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 542
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 542
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 543
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 543
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 544
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 544
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 545
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 545
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 546
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 546
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 547
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 547
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 548
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 548
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 549
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 549
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 550
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 550
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 551
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 551
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 552
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 552
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 553
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 553
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 554
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 554
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 555
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 555
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 556
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 556
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 557
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 557
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 558
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 558
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 559
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 559
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 560
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 560
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 561
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 561
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 562
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 562
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 563
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 563
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 564
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 564
+2020-05-01 18:52:22 - PHP Notice:  Undefined property: DB::$connection in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 565
+2020-05-01 18:52:22 - PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in C:\inetpub\wwwroot\racetimer\backend\model\catalog\evento.php on line 565
+2020-05-01 18:52:22 - PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\racetimer\backend\index.php:79) in C:\inetpub\wwwroot\racetimer\system\engine\controller.php on line 28
+2020-05-01 18:52:22 - PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\racetimer\backend\index.php:79) in C:\inetpub\wwwroot\racetimer\system\engine\controller.php on line 29
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 231
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 232
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 233
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 234
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 235
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 236
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 237
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 238
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 239
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 240
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 241
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 242
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 243
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 244
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 245
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 268
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 269
+2020-05-01 19:18:02 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 270
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 231
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 232
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 233
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 234
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 235
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 236
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 237
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 238
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 239
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 240
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 241
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 242
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 243
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 244
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 245
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 268
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 269
+2020-05-01 19:18:13 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 270
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 231
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 232
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 233
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 234
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 235
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 236
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 237
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 238
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 239
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 240
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 241
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 242
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 243
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 244
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 245
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 268
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 269
+2020-05-01 19:19:37 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 270
+2020-05-01 19:22:20 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 273
+2020-05-01 19:22:20 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 274
+2020-05-01 19:22:20 - PHP Notice:  Trying to access array offset on value of type bool in C:\inetpub\wwwroot\racetimer\controller\evento\evento.php on line 275
+2020-05-01 19:22:20 - PHP Notice:  Undefined variable: categoria_nombre in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 93
+2020-05-01 19:22:20 - PHP Notice:  Undefined variable: categoria_pais in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 93
+2020-05-01 19:22:20 - PHP Notice:  Undefined variable: categoria_numero in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 95
+2020-05-01 19:22:20 - PHP Notice:  Undefined variable: categoria_carrera in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 97
+2020-05-01 19:22:20 - PHP Notice:  Undefined variable: categoria_categoria in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 98
+2020-05-01 19:22:20 - PHP Notice:  Undefined variable: categoria_time_tag in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 99
+2020-05-01 19:22:21 - PHP Notice:  Undefined variable: categoria_ritmo in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 105
+2020-05-01 19:24:27 - PHP Notice:  Undefined variable: categoria_nombre in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 93
+2020-05-01 19:24:27 - PHP Notice:  Undefined variable: categoria_pais in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 93
+2020-05-01 19:24:27 - PHP Notice:  Undefined variable: categoria_numero in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 95
+2020-05-01 19:24:27 - PHP Notice:  Undefined variable: categoria_carrera in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 97
+2020-05-01 19:24:27 - PHP Notice:  Undefined variable: categoria_categoria in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 98
+2020-05-01 19:24:27 - PHP Notice:  Undefined variable: categoria_time_tag in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 99
+2020-05-01 19:24:27 - PHP Notice:  Undefined variable: text_bracket_result_cell_bracket in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 100
+2020-05-01 19:24:27 - PHP Notice:  Undefined variable: text_bracket_result_cell_gender in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 101
+2020-05-01 19:24:27 - PHP Notice:  Undefined variable: text_bracket_result_cell_overall in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 102
+2020-05-01 19:24:27 - PHP Notice:  Undefined variable: categoria_ritmo in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 105
+2020-05-01 19:28:47 - PHP Notice:  Undefined variable: categoria_nombre in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 93
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: categoria_nombre in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 93
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: categoria_nombre in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 96
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: categoria_pais in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 96
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: categoria_numero in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 98
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: categoria_carrera in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 100
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: categoria_categoria in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 101
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: categoria_time_tag in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 102
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: text_bracket_result_cell_bracket in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 103
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: text_bracket_result_cell_gender in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 104
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: text_bracket_result_cell_overall in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 105
+2020-05-01 19:29:37 - PHP Notice:  Undefined variable: categoria_ritmo in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 108
+2020-05-01 19:30:32 - PHP Notice:  Undefined variable: categoria_nombre in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 93
