@@ -677,6 +677,10 @@ class ModelCatalogEvento extends Model
 		}
 
 		$this->db->query("CREATE TABLE IF NOT EXISTS " . $table . " (" . $columns . ")");
+
+		echo "LOAD DATA LOCAL INFILE '" . addslashes($contenido) . "' INTO TABLE " . $table . " FIELDS TERMINATED BY ';' IGNORE 1 LINES";
+		exit(0);
+
 		$this->db->query("LOAD DATA LOCAL INFILE '" . addslashes($contenido) . "' INTO TABLE " . $table . " FIELDS TERMINATED BY ';' IGNORE 1 LINES");
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "participantes WHERE id_evento = '" . (int) $eventos_id . "'");
