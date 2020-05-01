@@ -1,3 +1,0 @@
-2020-05-01 2:22:44 - PHP Notice:  Undefined variable: eventos_home in C:\inetpub\wwwroot\racetimer\backend\view\template\catalog\evento_form.tpl on line 44
-2020-05-01 2:25:44 - PHP Notice:  Undefined variable: eventos_home in C:\inetpub\wwwroot\racetimer\backend\view\template\catalog\evento_form.tpl on line 44
-2020-05-01 2:25:55 - PHP Notice:  Undefined variable: eventos_home in C:\inetpub\wwwroot\racetimer\backend\view\template\catalog\evento_form.tpl on line 44

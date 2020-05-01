@@ -1,45 +1,45 @@
-<?php 
+<?php
 class ControllerCatalogEvento extends Controller {
-	private $error = array(); 
-     
+	private $error = array();
+
   	public function index() {
-		    	
-		$this->document->setTitle('Evenementen'); 
-		
+
+		$this->document->setTitle('Evenementen');
+
 		$this->load->model('catalog/evento');
-		
+
 		$this->getList();
   	}
-  
+
   	public function insert() {
-    	
-    	$this->document->setTitle('Evenementen'); 
-		
+
+    	$this->document->setTitle('Evenementen');
+
 		$this->load->model('catalog/evento');
-		
+
     	if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
 			$this->model_catalog_evento->addEvento($this->request->post);
-	  		
+
 			$this->session->data['success'] = 'U heeft een nieuw evenement aangemaakt!';
-	  
+
 			$url = '';
-			
+
 			if (isset($this->request->get['filter_eventos_titulo'])) {
 				$url .= '&filter_eventos_titulo=' . $this->request->get['filter_eventos_titulo'];
 			}
-		
+
 			if (isset($this->request->get['filter_eventos_tipos_nombre'])) {
 				$url .= '&filter_eventos_tipos_nombre=' . $this->request->get['filter_eventos_tipos_nombre'];
 			}
-			
+
 			if (isset($this->request->get['filter_eventos_cupos_internet'])) {
 				$url .= '&filter_eventos_cupos_internet=' . $this->request->get['filter_eventos_cupos_internet'];
 			}
-			
+
 			if (isset($this->request->get['filter_eventos_status'])) {
 				$url .= '&filter_eventos_status=' . $this->request->get['filter_eventos_status'];
 			}
-					
+
 			if (isset($this->request->get['sort'])) {
 				$url .= '&sort=' . $this->request->get['sort'];
 			}
@@ -51,38 +51,38 @@ class ControllerCatalogEvento extends Controller {
 			if (isset($this->request->get['page'])) {
 				$url .= '&page=' . $this->request->get['page'];
 			}
-			
+
 			$this->redirect($this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . $url, 'SSL'));
 
     	}
-	
+
     	$this->getForm();
   	}
 
   	public function update() {
-    	
+
 
 //		ini_set('error_reporting', E_ALL);
 
     	$this->document->setTitle('Evenementen');
-		
+
 		$this->load->model('catalog/evento');
-	
+
     	if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
-			
+
 			$id_evento = $this->request->get['eventos_id'];
-			
+
 			$this->model_catalog_evento->editEvento($this->request->get['eventos_id'], $this->request->post);
 
 /*
 			if (!empty($this->request->files['eventos_imagen_home']['name'])) {
-				$logo_evento = new Cloudfiles(); 
+				$logo_evento = new Cloudfiles();
 				$logo_evento->upload($this->request->files['eventos_imagen_home']['tmp_name'], $this->request->files['eventos_imagen_home']['name']);
 				$this->model_catalog_evento->updateHomeEvento($id_evento, $logo_evento->getPath());
 			}
 
 			if (!empty($this->request->files['eventos_imagen_header']['name'])) {
-				$logo_evento = new Cloudfiles(); 
+				$logo_evento = new Cloudfiles();
 				$logo_evento->upload($this->request->files['eventos_imagen_header']['tmp_name'], $this->request->files['eventos_imagen_header']['name']);
 				$this->model_catalog_evento->updateHeaderEvento($id_evento, $logo_evento->getPath());
 			}
@@ -92,23 +92,23 @@ class ControllerCatalogEvento extends Controller {
 //				if (is_uploaded_file($this->request->files['resultados_carga']['tmp_name'])) {
 
 					$filename = 'resultados_' . $id_evento . '.csv';
-	
+
 //					if(!move_uploaded_file($this->request->files['resultados_carga']['tmp_name'], DIR_UPLOAD . $filename)) {
 					if(move_uploaded_file($this->request->files['resultados_carga']['tmp_name'], DIR_UPLOAD . $filename)) {
-					
+
 //						echo 'Het bestand kon niet worden geladen De bijzonderheden:' . print_r($_FILES);
-					
+
 //					} else {
-					
+
 //						echo 'Het bestand is correct geladen!';
-					
+
 	  					if (file_exists(DIR_UPLOAD . $filename)) {
 							$contenido = DIR_UPLOAD . $filename;
 //							echo $contenido;
 //							exit(0);
 							$this->model_catalog_evento->importarResultadosEvento($this->request->get['eventos_id'], $contenido);
 						}
-				
+
 					}
 //				}
 			}
@@ -116,23 +116,23 @@ class ControllerCatalogEvento extends Controller {
 			$this->session->data['success'] = 'Je hebt het evenement informatie gewijzigd!';
 
 			$url = '';
-			
+
 			if (isset($this->request->get['filter_eventos_titulo'])) {
 				$url .= '&filter_eventos_titulo=' . $this->request->get['filter_eventos_titulo'];
 			}
-		
+
 			if (isset($this->request->get['filter_eventos_tipos_nombre'])) {
 				$url .= '&filter_eventos_tipos_nombre=' . $this->request->get['filter_eventos_tipos_nombre'];
 			}
-			
+
 			if (isset($this->request->get['filter_eventos_cupos_internet'])) {
 				$url .= '&filter_eventos_cupos_internet=' . $this->request->get['filter_eventos_cupos_internet'];
-			}	
-		
+			}
+
 			if (isset($this->request->get['filter_eventos_status'])) {
 				$url .= '&filter_eventos_status=' . $this->request->get['filter_eventos_status'];
 			}
-					
+
 			if (isset($this->request->get['sort'])) {
 				$url .= '&sort=' . $this->request->get['sort'];
 			}
@@ -144,7 +144,7 @@ class ControllerCatalogEvento extends Controller {
 			if (isset($this->request->get['page'])) {
 				$url .= '&page=' . $this->request->get['page'];
 			}
-			
+
 			$this->redirect($this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . $url, 'SSL'));
 
 		}
@@ -153,37 +153,37 @@ class ControllerCatalogEvento extends Controller {
   	}
 
   	public function delete() {
-    	
+
 
     	$this->document->setTitle('Evenementen');
-		
+
 		$this->load->model('catalog/evento');
-		
+
 		if (isset($this->request->post['selected']) && $this->validateDelete()) {
 			foreach ($this->request->post['selected'] as $eventos_id) {
 				$this->model_catalog_evento->deleteEvento($eventos_id);
 	  		}
 
 			$this->session->data['success'] = 'Je hebt gewijzigd gebeurtenissen!';
-			
+
 			$url = '';
-			
+
 			if (isset($this->request->get['filter_eventos_titulo'])) {
 				$url .= '&filter_eventos_titulo=' . $this->request->get['filter_eventos_titulo'];
 			}
-		
+
 			if (isset($this->request->get['filter_eventos_tipos_nombre'])) {
 				$url .= '&filter_eventos_tipos_nombre=' . $this->request->get['filter_eventos_tipos_nombre'];
 			}
-			
+
 			if (isset($this->request->get['filter_eventos_cupos_internet'])) {
 				$url .= '&filter_eventos_cupos_internet=' . $this->request->get['filter_eventos_cupos_internet'];
-			}	
-		
+			}
+
 			if (isset($this->request->get['filter_eventos_status'])) {
 				$url .= '&filter_eventos_status=' . $this->request->get['filter_eventos_status'];
 			}
-					
+
 			if (isset($this->request->get['sort'])) {
 				$url .= '&sort=' . $this->request->get['sort'];
 			}
@@ -195,7 +195,7 @@ class ControllerCatalogEvento extends Controller {
 			if (isset($this->request->get['page'])) {
 				$url .= '&page=' . $this->request->get['page'];
 			}
-			
+
 			$this->redirect($this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . $url, 'SSL'));
 		}
 
@@ -203,37 +203,37 @@ class ControllerCatalogEvento extends Controller {
   	}
 
   	public function copy() {
-    	
+
 
     	$this->document->setTitle('Evenementen');
-		
+
 		$this->load->model('catalog/evento');
-		
+
 		if (isset($this->request->post['selected']) && $this->validateCopy()) {
 			foreach ($this->request->post['selected'] as $eventos_id) {
 				$this->model_catalog_evento->copyEvento($eventos_id);
 	  		}
 
 			$this->session->data['success'] = 'Je hebt gewijzigd gebeurtenissen!';
-			
+
 			$url = '';
-			
+
 			if (isset($this->request->get['filter_eventos_titulo'])) {
 				$url .= '&filter_eventos_titulo=' . $this->request->get['filter_eventos_titulo'];
 			}
-		
+
 			if (isset($this->request->get['filter_eventos_tipos_nombre'])) {
 				$url .= '&filter_eventos_tipos_nombre=' . $this->request->get['filter_eventos_tipos_nombre'];
 			}
-			
+
 			if (isset($this->request->get['filter_eventos_cupos_internet'])) {
 				$url .= '&filter_eventos_cupos_internet=' . $this->request->get['filter_eventos_cupos_internet'];
-			}	
-		
+			}
+
 			if (isset($this->request->get['filter_eventos_status'])) {
 				$url .= '&filter_eventos_status=' . $this->request->get['filter_eventos_status'];
 			}
-					
+
 			if (isset($this->request->get['sort'])) {
 				$url .= '&sort=' . $this->request->get['sort'];
 			}
@@ -245,14 +245,14 @@ class ControllerCatalogEvento extends Controller {
 			if (isset($this->request->get['page'])) {
 				$url .= '&page=' . $this->request->get['page'];
 			}
-			
+
 			$this->redirect($this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . $url, 'SSL'));
 		}
 
     	$this->getList();
   	}
-	
-  	private function getList() {				
+
+  	private function getList() {
 		if (isset($this->request->get['filter_eventos_titulo'])) {
 			$filter_eventos_titulo = $this->request->get['filter_eventos_titulo'];
 		} else {
@@ -264,7 +264,7 @@ class ControllerCatalogEvento extends Controller {
 		} else {
 			$filter_eventos_tipos_nombre = null;
 		}
-		
+
 		if (isset($this->request->get['filter_eventos_cupos_internet'])) {
 			$filter_eventos_cupos_internet = $this->request->get['filter_eventos_cupos_internet'];
 		} else {
@@ -288,41 +288,41 @@ class ControllerCatalogEvento extends Controller {
 		} else {
 			$sort = 'e.eventos_status';
 		}
-		
+
 		if (isset($this->request->get['order'])) {
 			$order = $this->request->get['order'];
 		} else {
 			$order = 'ASC';
 		}
-		
+
 		if (isset($this->request->get['page'])) {
 			$page = $this->request->get['page'];
 		} else {
 			$page = 1;
 		}
-						
+
 		$url = '';
-						
+
 		if (isset($this->request->get['filter_eventos_titulo'])) {
 			$url .= '&filter_eventos_titulo=' . $this->request->get['filter_eventos_titulo'];
 		}
-		
+
 		if (isset($this->request->get['filter_eventos_tipos_nombre'])) {
 			$url .= '&filter_eventos_tipos_nombre=' . $this->request->get['filter_eventos_tipos_nombre'];
 		}
-		
+
 		if (isset($this->request->get['filter_eventos_cupos_internet'])) {
 			$url .= '&filter_eventos_cupos_internet=' . $this->request->get['filter_eventos_cupos_internet'];
-		}		
+		}
 
 		if (isset($this->request->get['filter_eventos_status'])) {
 			$url .= '&filter_eventos_status=' . $this->request->get['filter_eventos_status'];
 		}
-						
+
 		if (isset($this->request->get['filter_eventos_year'])) {
 			$url .= '&filter_eventos_year=' . $this->request->get['filter_eventos_year'];
 		}
-						
+
 		if (isset($this->request->get['sort'])) {
 			$url .= '&sort=' . $this->request->get['sort'];
 		}
@@ -330,7 +330,7 @@ class ControllerCatalogEvento extends Controller {
 		if (isset($this->request->get['order'])) {
 			$url .= '&order=' . $this->request->get['order'];
 		}
-		
+
 		if (isset($this->request->get['page'])) {
 			$url .= '&page=' . $this->request->get['page'];
 		}
@@ -345,20 +345,20 @@ class ControllerCatalogEvento extends Controller {
 
    		$this->data['breadcrumbs'][] = array(
        		'text'      => 'Evenementen',
-			'href'      => $this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . $url, 'SSL'),       		
+			'href'      => $this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . $url, 'SSL'),
       		'separator' => ' :: '
    		);
-		
+
 		$this->data['insert'] = $this->url->link('catalog/evento/insert', 'token=' . $this->session->data['token'] . $url, 'SSL');
-		$this->data['copy'] = $this->url->link('catalog/evento/copy', 'token=' . $this->session->data['token'] . $url, 'SSL');	
+		$this->data['copy'] = $this->url->link('catalog/evento/copy', 'token=' . $this->session->data['token'] . $url, 'SSL');
 		$this->data['delete'] = $this->url->link('catalog/evento/delete', 'token=' . $this->session->data['token'] . $url, 'SSL');
-    	
-	   	$this->data['years'] = $this->model_catalog_evento->getEventosYears();			
-		
+
+	   	$this->data['years'] = $this->model_catalog_evento->getEventosYears();
+
 		$this->data['eventos'] = array();
 
 		$data = array(
-			'filter_eventos_titulo'	  		=> $filter_eventos_titulo, 
+			'filter_eventos_titulo'	  		=> $filter_eventos_titulo,
 			'filter_eventos_tipos_nombre'	=> $filter_eventos_tipos_nombre,
 			'filter_eventos_cupos_internet'	=> $filter_eventos_cupos_internet,
 			'filter_eventos_status'   		=> $filter_eventos_status,
@@ -368,26 +368,26 @@ class ControllerCatalogEvento extends Controller {
 			'start'           				=> ($page - 1) * $this->config->get('config_admin_limit'),
 			'limit'           				=> $this->config->get('config_admin_limit')
 		);
-		
+
 		$this->load->model('tool/image');
-		
+
 		$evento_total = $this->model_catalog_evento->getTotalEventos($data);
 		$results = $this->model_catalog_evento->getEventos($data);
-				    	
+
 		foreach ($results as $result) {
 			$action = array();
-			
+
 			$action[] = array(
 				'text' => 'Uitgeven',
 				'href' => $this->url->link('catalog/evento/update', 'token=' . $this->session->data['token'] . '&eventos_id=' . $result['eventos_id'] . $url, 'SSL')
 			);
-			
+
 			if ($result['eventos_imagen_home'] && file_exists(DIR_IMAGE . $result['eventos_imagen_home'])) {
 				$image = $this->model_tool_image->resize($result['eventos_imagen_home'], 100, 100);
 			} else {
 				$image = $this->model_tool_image->resize('no_image.jpg', 100, 100);
 			}
-	
+
       		$this->data['eventos'][] = array(
 				'eventos_id' 				=> $result['eventos_id'],
 				'eventos_titulo'       		=> $result['eventos_titulo'],
@@ -401,30 +401,30 @@ class ControllerCatalogEvento extends Controller {
 				'action'     				=> $action
 			);
     	}
-		
-		$this->data['heading_title'] = 'Evenementen';		
-				
+
+		$this->data['heading_title'] = 'Evenementen';
+
     	$this->data['text_all'] = ' --- Alle --- ';
-		$this->data['text_enabled'] = 'Enabled';		
-		$this->data['text_disabled'] = 'Disabled';		
-		$this->data['text_no_results'] = 'Geen resultaat';		
-		$this->data['text_image_manager'] = 'Afbeelding Manager';		
-			
-		$this->data['column_image'] = 'Afbeelding';		
-		$this->data['column_eventos_titulo'] = 'Evenement naam';		
-		$this->data['column_eventos_tipos_nombre'] = 'Type';		
-		$this->data['column_eventos_cupos_internet'] = 'Het openen van de quota';		
-		$this->data['column_eventos_cupos_internet'] = 'Quota voor Internet';		
-		$this->data['column_eventos_status'] = 'Staat';		
-		$this->data['column_action'] = 'Actie';		
-				
-		$this->data['button_copy'] = 'Exemplaar';		
-		$this->data['button_insert'] = 'Toevoegen';		
-		$this->data['button_delete'] = 'Verwijderen';		
+		$this->data['text_enabled'] = 'Enabled';
+		$this->data['text_disabled'] = 'Disabled';
+		$this->data['text_no_results'] = 'Geen resultaat';
+		$this->data['text_image_manager'] = 'Afbeelding Manager';
+
+		$this->data['column_image'] = 'Afbeelding';
+		$this->data['column_eventos_titulo'] = 'Evenement naam';
+		$this->data['column_eventos_tipos_nombre'] = 'Type';
+		$this->data['column_eventos_cupos_internet'] = 'Het openen van de quota';
+		$this->data['column_eventos_cupos_internet'] = 'Quota voor Internet';
+		$this->data['column_eventos_status'] = 'Staat';
+		$this->data['column_action'] = 'Actie';
+
+		$this->data['button_copy'] = 'Exemplaar';
+		$this->data['button_insert'] = 'Toevoegen';
+		$this->data['button_delete'] = 'Verwijderen';
 		$this->data['button_filter'] = 'Filter';
-		 
+
  		$this->data['token'] = $this->session->data['token'];
-		
+
  		if (isset($this->error['warning'])) {
 			$this->data['error_warning'] = $this->error['warning'];
 		} else {
@@ -433,7 +433,7 @@ class ControllerCatalogEvento extends Controller {
 
 		if (isset($this->session->data['success'])) {
 			$this->data['success'] = $this->session->data['success'];
-		
+
 			unset($this->session->data['success']);
 		} else {
 			$this->data['success'] = '';
@@ -444,23 +444,23 @@ class ControllerCatalogEvento extends Controller {
 		if (isset($this->request->get['filter_eventos_titulo'])) {
 			$url .= '&filter_eventos_titulo=' . $this->request->get['filter_eventos_titulo'];
 		}
-		
+
 		if (isset($this->request->get['filter_eventos_tipos_nombre'])) {
 			$url .= '&filter_eventos_tipos_nombre=' . $this->request->get['filter_eventos_tipos_nombre'];
 		}
-		
+
 		if (isset($this->request->get['filter_eventos_cupos_internet'])) {
 			$url .= '&filter_eventos_cupos_internet=' . $this->request->get['filter_eventos_cupos_internet'];
 		}
-		
+
 		if (isset($this->request->get['filter_eventos_status'])) {
 			$url .= '&filter_eventos_status=' . $this->request->get['filter_eventos_status'];
 		}
-								
+
 		if (isset($this->request->get['filter_eventos_year'])) {
 			$url .= '&filter_eventos_year=' . $this->request->get['filter_eventos_year'];
 		}
-								
+
 		if ($order == 'ASC') {
 			$url .= '&order=DESC';
 		} else {
@@ -470,23 +470,23 @@ class ControllerCatalogEvento extends Controller {
 		if (isset($this->request->get['page'])) {
 			$url .= '&page=' . $this->request->get['page'];
 		}
-					
+
 		$this->data['sort_eventos_titulo'] = $this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . '&sort=e.eventos_titulo' . $url, 'SSL');
 		$this->data['sort_eventos_tipos_nombre'] = $this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . '&sort=e.eventos_tipos_nombre' . $url, 'SSL');
 		$this->data['sort_eventos_cupos_internet'] = $this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . '&sort=e.eventos_cupos_internet' . $url, 'SSL');
 		$this->data['sort_eventos_status'] = $this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . '&sort=e.eventos_eventos_status' . $url, 'SSL');
 		$this->data['sort_eventos_orden'] = $this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . '&sort=e.eventos_orden' . $url, 'SSL');
-		
+
 		$url = '';
 
 		if (isset($this->request->get['filter_eventos_titulo'])) {
 			$url .= '&filter_eventos_titulo=' . $this->request->get['filter_eventos_titulo'];
 		}
-		
+
 		if (isset($this->request->get['filter_eventos_tipos_nombre'])) {
 			$url .= '&filter_eventos_tipos_nombre=' . $this->request->get['filter_eventos_tipos_nombre'];
 		}
-		
+
 		if (isset($this->request->get['filter_eventos_cupos_internet'])) {
 			$url .= '&filter_eventos_cupos_internet=' . $this->request->get['filter_eventos_cupos_internet'];
 		}
@@ -502,26 +502,26 @@ class ControllerCatalogEvento extends Controller {
 		if (isset($this->request->get['sort'])) {
 			$url .= '&sort=' . $this->request->get['sort'];
 		}
-												
+
 		if (isset($this->request->get['order'])) {
 			$url .= '&order=' . $this->request->get['order'];
 		}
-				
+
 		$pagination = new Pagination();
 		$pagination->total = $evento_total;
 		$pagination->page = $page;
 		$pagination->limit = $this->config->get('config_admin_limit');
 		$pagination->text = 'Resultaat {start} te {end} van {total} ({pages} Pages)';
 		$pagination->url = $this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . $url . '&page={page}', 'SSL');
-			
+
 		$this->data['pagination'] = $pagination->render();
-	
+
 		$this->data['filter_eventos_titulo'] = $filter_eventos_titulo;
 		$this->data['filter_eventos_tipos_nombre'] = $filter_eventos_tipos_nombre;
 		$this->data['filter_eventos_cupos_internet'] = $filter_eventos_cupos_internet;
 		$this->data['filter_eventos_status'] = $filter_eventos_status;
 		$this->data['filter_eventos_year'] = $filter_eventos_year;
-		
+
 		$this->data['sort'] = $sort;
 		$this->data['order'] = $order;
 
@@ -530,13 +530,13 @@ class ControllerCatalogEvento extends Controller {
 			'common/header',
 			'common/footer',
 		);
-				
+
 		$this->response->setOutput($this->render());
   	}
 
   	private function getForm() {
     	$this->data['heading_title'] = 'Evenementen';
- 
+
     	$this->data['text_enabled'] = 'Enabled';
     	$this->data['text_disabled'] = 'Disabled';
     	$this->data['text_none'] = ' --- Geen --- ';
@@ -637,11 +637,11 @@ class ControllerCatalogEvento extends Controller {
     	$this->data['entry_price'] = 'Precio de Optie';
 		$this->data['entry_option_points'] = 'Puntos de Optie';
     	$this->data['entry_weight'] = 'Peso de Optie';
-		
+
 
 		$this->data['entry_text'] = 'Texto:';
 		$this->data['entry_required'] = 'Requerido:';
-				
+
     	$this->data['button_save'] = 'Besparen';
     	$this->data['button_cancel'] = 'Annuleren';
 		$this->data['button_add_categoria'] = 'Toevoegen Categor&iacute;a';
@@ -652,7 +652,7 @@ class ControllerCatalogEvento extends Controller {
 		$this->data['button_add_special'] = 'Add Special';
 		$this->data['button_add_image'] = 'Toevoegen Afbeelding';
 		$this->data['button_remove'] = 'Verwijderen';
-		
+
     	$this->data['tab_general'] = 'Algemeen';
     	$this->data['tab_datos'] = 'Datos';
     	$this->data['tab_imagenes'] = 'Afbeeldinges';
@@ -663,7 +663,7 @@ class ControllerCatalogEvento extends Controller {
     	$this->data['tab_resultados'] = 'Uitslagen';
     	$this->data['tab_galeria'] = 'Galer&iacute;a';
 		$this->data['tab_links'] = 'Links';
-		 
+
  		if (isset($this->error['warning'])) {
 			$this->data['error_warning'] = $this->error['warning'];
 		} else {
@@ -680,53 +680,53 @@ class ControllerCatalogEvento extends Controller {
 			$this->data['error_meta_description'] = $this->error['meta_description'];
 		} else {
 			$this->data['error_meta_description'] = array();
-		}		
-   
+		}
+
    		if (isset($this->error['description'])) {
 			$this->data['error_description'] = $this->error['description'];
 		} else {
 			$this->data['error_description'] = array();
-		}	
-		
+		}
+
    		if (isset($this->error['eventos_tipos_nombre'])) {
 			$this->data['error_model'] = $this->error['eventos_tipos_nombre'];
 		} else {
 			$this->data['error_model'] = '';
-		}		
-     	
+		}
+
 		if (isset($this->error['eventos_fecha_disponible'])) {
 			$this->data['error_eventos_fecha_disponible'] = $this->error['eventos_fecha_disponible'];
 		} else {
 			$this->data['error_eventos_fecha_disponible'] = '';
-		}	
+		}
 
 		if (isset($this->session->data['success'])) {
 			$this->data['success'] = $this->session->data['success'];
-		
+
 			unset($this->session->data['success']);
 		} else {
 			$this->data['success'] = '';
 		}
-			
+
 
 		$url = '';
 
 		if (isset($this->request->get['filter_eventos_titulo'])) {
 			$url .= '&filter_eventos_titulo=' . $this->request->get['filter_eventos_titulo'];
 		}
-		
+
 		if (isset($this->request->get['filter_eventos_tipos_nombre'])) {
 			$url .= '&filter_eventos_tipos_nombre=' . $this->request->get['filter_eventos_tipos_nombre'];
 		}
-		
+
 		if (isset($this->request->get['filter_eventos_cupos_internet'])) {
 			$url .= '&filter_eventos_cupos_internet=' . $this->request->get['filter_eventos_cupos_internet'];
-		}	
-		
+		}
+
 		if (isset($this->request->get['filter_eventos_status'])) {
 			$url .= '&filter_eventos_status=' . $this->request->get['filter_eventos_status'];
 		}
-								
+
 		if (isset($this->request->get['sort'])) {
 			$url .= '&sort=' . $this->request->get['sort'];
 		}
@@ -734,7 +734,7 @@ class ControllerCatalogEvento extends Controller {
 		if (isset($this->request->get['order'])) {
 			$url .= '&order=' . $this->request->get['order'];
 		}
-		
+
 		if (isset($this->request->get['page'])) {
 			$url .= '&page=' . $this->request->get['page'];
 		}
@@ -752,13 +752,13 @@ class ControllerCatalogEvento extends Controller {
 			'href'      => $this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . $url, 'SSL'),
       		'separator' => ' :: '
    		);
-									
+
 		if (!isset($this->request->get['eventos_id'])) {
 			$this->data['action'] = $this->url->link('catalog/evento/insert', 'token=' . $this->session->data['token'] . $url, 'SSL');
 		} else {
 			$this->data['action'] = $this->url->link('catalog/evento/update', 'token=' . $this->session->data['token'] . '&eventos_id=' . $this->request->get['eventos_id'] . $url, 'SSL');
 		}
-		
+
 		$this->data['cancel'] = $this->url->link('catalog/evento', 'token=' . $this->session->data['token'] . $url, 'SSL');
 
 		$this->data['token'] = $this->session->data['token'];
@@ -781,6 +781,14 @@ class ControllerCatalogEvento extends Controller {
 			$this->data['eventos_status'] = $evento_info['eventos_status'];
 		} else {
       		$this->data['eventos_status'] = 0;
+    	}
+
+		if (isset($this->request->post['eventos_home'])) {
+      		$this->data['eventos_home'] = $this->request->post['eventos_home'];
+    	} else if (isset($evento_info)) {
+			$this->data['eventos_home'] = $evento_info['eventos_home'];
+		} else {
+      		$this->data['eventos_home'] = 0;
     	}
 
     	if (isset($this->request->post['eventos_revista'])) {
@@ -811,7 +819,7 @@ class ControllerCatalogEvento extends Controller {
     	}
 
 		$this->load->model('catalog/tipos');
-		
+
     	$this->data['tipos'] = $this->model_catalog_tipos->getTipos();
 
     	if (isset($this->request->post['eventos_tipos_id'])) {
@@ -820,7 +828,7 @@ class ControllerCatalogEvento extends Controller {
 			$this->data['eventos_tipos_id'] = $this->model_catalog_evento->getTipoID($this->request->get['eventos_id']);
 		} else {
       		$this->data['eventos_tipos_id'] = array();
-    	} 
+    	}
 
     	if (isset($this->request->post['eventos_orden'])) {
       		$this->data['eventos_orden'] = $this->request->post['eventos_orden'];
@@ -925,7 +933,7 @@ class ControllerCatalogEvento extends Controller {
 		} else {
 			$this->data['eventos_logo'] = '';
 		}
-		
+
 		if (isset($this->request->post['eventos_imagen_home'])) {
 			$this->data['eventos_imagen_home'] = $this->request->post['eventos_imagen_home'];
 		} elseif (isset($evento_info)) {
@@ -951,33 +959,33 @@ class ControllerCatalogEvento extends Controller {
 		}
 
 		$this->load->model('tool/image');
-		
+
 		if (isset($evento_info) && $evento_info['eventos_imagen_home'] && file_exists(DIR_IMAGE . $evento_info['eventos_imagen_home'])) {
 			$this->data['preview_eventos_imagen_home'] = $this->model_tool_image->resize($evento_info['eventos_imagen_home'], 400, 400);
 		} else {
 			$this->data['preview_eventos_imagen_home'] = $this->model_tool_image->resize('no_image.jpg', 400, 400);
 		}
-		
+
 		if (isset($evento_info) && $evento_info['eventos_imagen_header'] && file_exists(DIR_IMAGE . $evento_info['eventos_imagen_header'])) {
 			$this->data['preview_eventos_imagen_header'] = $this->model_tool_image->resize($evento_info['eventos_imagen_header'], 867, 673);
 		} else {
 			if ( $eventos_certificado_foto != 0 ) {
 				$this->data['preview_eventos_imagen_header'] = $this->model_tool_image->resize('racetimer_certificate_foto_mockup.jpg', 867, 673);
-			} else { 
+			} else {
 				$this->data['preview_eventos_imagen_header'] = $this->model_tool_image->resize('racetimer_certificate_mockup.jpg', 867, 673);
 			}
 		}
-		
+
 		$this->template = 'catalog/evento_form.tpl';
 		$this->children = array(
 			'common/header',
 			'common/footer',
 		);
-				
+
 		$this->response->setOutput($this->render());
-  	} 
-	
-  	private function validateForm() { 
+  	}
+
+  	private function validateForm() {
     	if (!$this->user->hasPermission('modify', 'catalog/evento')) {
       		$this->error['warning'] = 'Advertencia: ¡Usted no tiene permisos para modificar los eventos!';
     	}
@@ -985,10 +993,10 @@ class ControllerCatalogEvento extends Controller {
 		if ((strlen(utf8_decode($this->request->post['eventos_titulo'])) < 3) || (strlen(utf8_decode($this->request->post['eventos_titulo'])) > 255)) {
 			$this->error['eventos_titulo'] = '¡El nombre del evento debe tener entre 3 y 255 caracteres!';
 		}
-		
+
 /*
 		$this->load->model('catalog/evento');
-		
+
 		foreach ($this->request->post['eventos_numeros_id'] as $eventos_numeros_id) {
 			$evento_total = $this->model_catalog_evento->getTotalClientesByNumero($eventos_numeros_id, $this->request->get['eventos_id']);
 
@@ -1001,19 +1009,19 @@ class ControllerCatalogEvento extends Controller {
 		if ($this->error && !isset($this->error['warning'])) {
 			$this->error['warning'] = 'Advertencia: ¡Por favor verifique la informaci&oacute;n!';
 		}
-					
+
     	if (!$this->error) {
 			return true;
     	} else {
       		return false;
     	}
   	}
-	
+
   	private function validateDelete() {
     	if (!$this->user->hasPermission('modify', 'catalog/evento')) {
-      		$this->error['warning'] = 'Advertencia: ¡Usted no tiene permisos para modificar los eventos!';  
+      		$this->error['warning'] = 'Advertencia: ¡Usted no tiene permisos para modificar los eventos!';
     	}
-		
+
 		if (!$this->error) {
 	  		return true;
 		} else {
@@ -1023,47 +1031,47 @@ class ControllerCatalogEvento extends Controller {
 
   	private function validateCopy() {
     	if (!$this->user->hasPermission('modify', 'catalog/evento')) {
-      		$this->error['warning'] = 'Advertencia: ¡Usted no tiene permisos para modificar los eventos!';  
+      		$this->error['warning'] = 'Advertencia: ¡Usted no tiene permisos para modificar los eventos!';
     	}
-		
+
 		if (!$this->error) {
 	  		return true;
 		} else {
 	  		return false;
 		}
   	}
-	
+
 	public function autocomplete() {
 		$json = array();
-		
+
 		if (isset($this->request->post['filter_eventos_titulo'])) {
 			$this->load->model('catalog/evento');
-			
+
 			$data = array(
 				'filter_eventos_titulo' => $this->request->post['filter_eventos_titulo'],
 				'start'       => 0,
 				'limit'       => 20
 			);
-			
+
 			$results = $this->model_catalog_evento->getEventos($data);
-			
+
 			foreach ($results as $result) {
 				$opcion_data = array();
-				
-				$evento_opciones = $this->model_catalog_evento->getEventoOpciones($result['eventos_id']);	
-				
+
+				$evento_opciones = $this->model_catalog_evento->getEventoOpciones($result['eventos_id']);
+
 				foreach ($evento_opciones as $evento_opcion) {
 					if ($evento_opcion['opcion_tipo'] == 'select' || $evento_opcion['opcion_tipo'] == 'radio' || $evento_opcion['opcion_tipo'] == 'checkbox') {
 						$opcion_valor_data = array();
-					
+
 						foreach ($evento_opcion['evento_opcion_valor'] as $evento_opcion_valor) {
 							$opcion_valor_data[] = array(
 								'evento_opcion_valor_id' => $evento_opcion_valor['evento_opcion_valor_id'],
 								'opcion_valor_id'         => $evento_opcion_valor['opcion_valor_id'],
 								'eventos_titulo'                    => $evento_opcion_valor['eventos_titulo'],
-							);	
+							);
 						}
-					
+
 						$opcion_data[] = array(
 							'eventos_opcion_id' => $evento_opcion['eventos_opcion_id'],
 							'opcion_id'        => $evento_opcion['opcion_id'],
@@ -1071,7 +1079,7 @@ class ControllerCatalogEvento extends Controller {
 							'opcion_tipo'      => $evento_opcion['opcion_tipo'],
 							'opcion_valor'     => $opcion_valor_data,
 							'eventos_opcion_requerido'         => $evento_opcion['eventos_opcion_requerido']
-						);	
+						);
 					} else {
 						$opcion_data[] = array(
 							'eventos_opcion_id' => $evento_opcion['eventos_opcion_id'],
@@ -1080,19 +1088,19 @@ class ControllerCatalogEvento extends Controller {
 							'opcion_tipo'      => $evento_opcion['opcion_tipo'],
 							'opcion_valor'     => $evento_opcion['opcion_valor'],
 							'eventos_opcion_requerido'         => $evento_opcion['eventos_opcion_requerido']
-						);				
+						);
 					}
 				}
-				
+
 				$json[] = array(
 					'eventos_id' 			=> $result['eventos_id'],
-					'eventos_titulo'        => html_entity_decode($result['eventos_titulo'], ENT_QUOTES, 'UTF-8'),	
+					'eventos_titulo'        => html_entity_decode($result['eventos_titulo'], ENT_QUOTES, 'UTF-8'),
 					'eventos_tipos_nombre'	=> $result['eventos_tipos_nombre'],
 					'option'     			=> $opcion_data,
-				);	
+				);
 			}
 		}
-		
+
 		$this->load->library('json');
 
 		$this->response->setOutput(Json::encode($json));
@@ -1103,9 +1111,9 @@ class ControllerCatalogEvento extends Controller {
 		$this->load->model('catalog/evento');
 
 		$json = array();
-		
+
 		if (!empty($this->request->post['item']) && !empty($this->request->post['eventos_id']) && !empty($this->request->post['imagen'])) {
-			$image = $this->request->post['imagen']; 
+			$image = $this->request->post['imagen'];
 			$item = $this->request->post['item'];
 			$id_evento = $this->request->post['eventos_id'];
 			switch ($image) {
@@ -1119,16 +1127,15 @@ class ControllerCatalogEvento extends Controller {
 					$this->model_catalog_evento->updateHeaderEvento($id_evento, '');
 					break;
 			}
-			$object = new Cloudfiles(); 
+			$object = new Cloudfiles();
 			$object->delete($item);
 			$json['output'] = 'Se elimino el item: ' . $this->request->post['item'] . ' del Cloud Server';
 		}
-		
+
 		$this->load->library('json');
 
 		$this->response->setOutput(Json::encode($json));
 
 	}
-	
+
 }
-?>
