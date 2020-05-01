@@ -678,6 +678,7 @@ class ModelCatalogEvento extends Model
 
 		echo 'Se creara la tabla: ' . $table . '<br />';
 		echo 'con las siguientes columnas: <br />';
+		echo "CREATE TABLE IF NOT EXISTS " . $table . " (" . $columns . ")";
 		echo '<pre>';
 		print_r($columns);
 		echo '</pre>';
