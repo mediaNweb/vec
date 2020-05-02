@@ -101,7 +101,7 @@
 	</div>
 	<script>
 		var a2a_config = a2a_config || {};
-		a2a_config.linkurl = "http://result.entrysystem.live/index.php?route=evento/certificado&eventos_id=<?php echo $eventos_id; ?>&numero=<?php echo $numero; ?>";
+		a2a_config.linkurl = "https://virtualworldruns.com/index.php?route=evento/certificado&eventos_id=<?php echo $eventos_id; ?>&numero=<?php echo $numero; ?>";
 		a2a_config.onclick = 1;
 		a2a_config.locale = "nl";
 		a2a_config.color_main = "ba2626";

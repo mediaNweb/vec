@@ -15,29 +15,29 @@
 	<div class="container">
 		<div class="page1">
 			<div class="bg-img">
-				<img src="<?php echo $eventos_certificado; ?>" width="867" height="673"/>
+				<img src="<?php echo $eventos_certificado; ?>" width="867" height="673" />
 			</div>
 			<div class="col-1">
 				<div class="row-1">
 					<div class="foto-container">
-					<img src="<?php echo $foto; ?>" width="437" height="296"/>
+						<img src="<?php echo $foto; ?>" width="437" height="296" />
 					</div>
 				</div>
 				<div class="row-2">
 					<div class="column-left">
-						<?php echo $text_result_cell_gun; ?> <br/>
+						<?php echo $text_result_cell_gun; ?> <br />
 						<span style="font-size:18px; font-weight: bold;">
 							<?php echo $time_oficial; ?>
 						</span>
 					</div>
 					<div class="column-center">
-						<?php echo $text_result_cell_net; ?> <br/>
+						<?php echo $text_result_cell_net; ?> <br />
 						<span style="font-size:18px; font-weight: bold;">
 							<?php echo $time_tag; ?>
 						</span>
 					</div>
 					<div class="column-right">
-						<?php echo $text_certificate_pace; ?> <br/>
+						<?php echo $text_certificate_pace; ?> <br />
 						<span style="font-size:18px; font-weight: bold;">
 							<?php echo $ritmo; ?>
 						</span>
@@ -68,7 +68,7 @@
 				<div class="divider-space"></div>
 			</div>
 			<div class="col-2">
-				<div class="row-1"> 
+				<div class="row-1">
 					<div class="txt-name">
 						<?php echo $nombre; ?>
 					</div>
@@ -113,7 +113,7 @@
 	</div>
 	<script>
 		var a2a_config = a2a_config || {};
-		a2a_config.linkurl = "http://result.entrysystem.live/index.php?route=evento/certificado&eventos_id=<?php echo $eventos_id; ?>&numero=<?php echo $numero; ?>";
+		a2a_config.linkurl = "https://virtualworldruns.com/index.php?route=evento/certificado&eventos_id=<?php echo $eventos_id; ?>&numero=<?php echo $numero; ?>";
 		a2a_config.onclick = 1;
 		a2a_config.locale = "nl";
 		a2a_config.color_main = "ba2626";
