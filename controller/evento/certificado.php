@@ -155,7 +155,7 @@ class ControllerEventoCertificado extends Controller
 			}
 */
 		$mpdf->WriteHTML($this->render());
-		$mpdf->Output();
+		$mpdf->Output($numero . '_' . $nombre . '.pdf', 'D');
 
 		//		$this->response->setOutput($this->render());
 	}
