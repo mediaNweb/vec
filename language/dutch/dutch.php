@@ -67,7 +67,7 @@ $_['button_home']                = 'Home';
 $_['button_load_more_events']   = 'Meer Evenementen';
 $_['button_submit']                = 'Schrijf je nu in';
 $_['button_swedish']            = 'Zweeds';
-$_['button_results']            = 'Ontvang uitslagen';
+$_['button_results']            = 'Zoek deelnemer';
 
 // Inputs
 $_['input_contact_form_email_address']    = 'Email adres';
