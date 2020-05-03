@@ -286,9 +286,11 @@ class ControllerEventoEvento extends Controller
 					$this->data['speed_unit']						= $this->language->get('speed_unit');
 					$this->data['text_result_certificate']			= $this->language->get('text_result_certificate');
 					$this->data['text_result_certificate_link']		= $this->language->get('text_result_certificate_link');
+					$this->data['text_result_bib_link']				= $this->language->get('text_result_bib_link');
 					$this->data['text_result_widget_link']			= $this->language->get('text_result_widget_link');
 
 					$this->data['certificado'] = $this->url->link('evento/certificado', 'eventos_id=' . $eventos_id . '&numero=' . $numero);
+					$this->data['bib'] = $this->url->link('evento/bib', 'eventos_id=' . $eventos_id . '&numero=' . $numero);
 					$this->data['eventos_revista'] = $evento_info['eventos_revista'];
 					$this->data['eventos_certificado'] = $evento_info['eventos_certificado'];
 					$eventos_certificado_foto = $evento_info['eventos_certificado_foto'];

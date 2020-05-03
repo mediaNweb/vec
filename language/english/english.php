@@ -43,6 +43,7 @@ $_['text_male']                            = 'Male';
 $_['text_female']                        = 'Female';
 $_['text_result_certificate']            = 'Do you need your race certificate?';
 $_['text_result_certificate_link']        = 'Get it here';
+$_['text_result_bib_link']                  = 'Get Bib here';
 $_['text_result_widget_link']            = 'Direct Result Widget';
 $_['text_certificate_bib']                = 'Bib:';
 $_['text_certificate_pace']                = 'Pace:';

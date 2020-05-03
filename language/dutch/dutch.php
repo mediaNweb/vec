@@ -43,6 +43,7 @@ $_['text_male']                            = 'Man';
 $_['text_female']                        = 'Vrouw';
 $_['text_result_certificate']            = 'Wil je je eigen certificaat ontvangen?';
 $_['text_result_certificate_link']        = 'Ontvang hem hier';
+$_['text_result_bib_link']              = 'Haal hier het startnummer op';
 $_['text_result_widget_link']            = 'Direct naar de uitslagen';
 $_['text_certificate_bib']                = 'Startnummer:';
 $_['text_certificate_pace']                = 'Gemiddelde snelheid:';

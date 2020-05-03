@@ -142,6 +142,7 @@
               <h4></h4>
               <p class="sub-lead"><?php echo $text_result_certificate; ?></p>
               <a href="<?php echo $certificado; ?>" target="_blank" class="cta cta-default all-caps clearfix" Xdata-sr="enter bottom over 1s and move 75px"><?php echo $text_result_certificate_link; ?></a>
+              <a href="<?php echo $bib; ?>" target="_blank" class="cta cta-default all-caps clearfix" Xdata-sr="enter bottom over 1s and move 75px"><?php echo $text_result_bib_link; ?></a>
               <div class="clearfix"></div>
               <small Xdata-sr="enter bottom over 1s and move 75px wait 0.2s"><a href="<?php echo $chronotrack; ?>" target="_blank"><?php echo $text_result_widget_link; ?></a></small>
             </div>
