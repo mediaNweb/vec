@@ -14,12 +14,21 @@
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 	<div class="container">
 		<div class="row-1">
+			<div class="txt-name">
+				<?php echo $nombre; ?>
+			</div>
+		</div>
+		<div class="row-2">
 			<div class="txt-bib">
 				<?php echo $numero; ?>
 			</div>
 		</div>
-		<div class="divider-space"></div>
-		<div class="row-2">
+		<div class="row-3">
+			<div class="txt-event">
+				<?php echo $categoria; ?>
+			</div>
+		</div>
+		<div class="row-4">
 			<div class="txt-bracket">
 				<span>ID:</span>
 				<?php echo $cedula; ?>
