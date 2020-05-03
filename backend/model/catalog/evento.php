@@ -57,11 +57,11 @@ class ModelCatalogEvento extends Model
 			$this->db->query("UPDATE " . DB_PREFIX . "eventos SET eventos_imagen_header = '" . $this->db->escape($data['file_eventos_imagen_header']) . "' WHERE eventos_id = '" . (int) $eventos_id . "'");
 		}
 
-		/*
-		if (isset($data['eventos_imagen_afiche'])) {
-			$this->db->query("UPDATE " . DB_PREFIX . "eventos SET eventos_imagen_afiche = '" . $this->db->escape($data['eventos_imagen_afiche']) . "' WHERE eventos_id = '" . (int)$eventos_id . "'");
+
+		if (isset($data['file_eventos_imagen_afiche'])) {
+			$this->db->query("UPDATE " . DB_PREFIX . "eventos SET eventos_imagen_afiche = '" . $this->db->escape($data['file_eventos_imagen_afiche']) . "' WHERE eventos_id = '" . (int) $eventos_id . "'");
 		}
-*/
+
 		$this->db->query("DELETE FROM " . DB_PREFIX . "eventos_descripcion WHERE eventos_descripcion_id_evento = '" . (int) $eventos_id . "'");
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "eventos_a_tipos WHERE eventos_a_tipos_id_evento = '" . (int) $eventos_id . "'");
@@ -87,6 +87,12 @@ class ModelCatalogEvento extends Model
 	{
 
 		$this->db->query("UPDATE " . DB_PREFIX . "eventos SET eventos_imagen_header = '" . $this->db->escape($path) . "' WHERE eventos_id = '" . (int) $eventos_id . "'");
+	}
+
+	public function updateAficheEvento($eventos_id, $path)
+	{
+
+		$this->db->query("UPDATE " . DB_PREFIX . "eventos SET eventos_imagen_afiche = '" . $this->db->escape($path) . "' WHERE eventos_id = '" . (int) $eventos_id . "'");
 	}
 
 	public function copyEvento($eventos_id)

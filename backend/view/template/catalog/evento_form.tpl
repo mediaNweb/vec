@@ -180,7 +180,14 @@
               <td><?php echo $entry_eventos_imagen_header; ?></td>
               <td>
                 <input type="hidden" name="file_eventos_imagen_header" value="<?php echo $eventos_imagen_header; ?>" id="file_eventos_imagen_header" />
-                <img src="<?php echo $preview_eventos_imagen_header; ?>" alt="" id="preview_eventos_imagen_header" class="image" onclick="image_upload('file_eventos_imagen_header', 'preview_eventos_imagen_header');" />	
+                <img src="<?php echo $preview_eventos_imagen_header; ?>" alt="" id="preview_eventos_imagen_header" class="image" onclick="image_upload('file_eventos_imagen_header', 'preview_eventos_imagen_header');" />
+              </td>
+            </tr>
+            <tr>
+              <td><?php echo $entry_eventos_imagen_afiche; ?></td>
+              <td>
+                <input type="hidden" name="file_eventos_imagen_afiche" value="<?php echo $eventos_imagen_afiche; ?>" id="file_eventos_imagen_afiche" />
+                <img src="<?php echo $preview_eventos_imagen_afiche; ?>" alt="" id="preview_eventos_imagen_afiche" class="image" onclick="image_upload('file_eventos_imagen_afiche', 'preview_eventos_imagen_afiche');" />
               </td>
             </tr>
           </table>
@@ -201,7 +208,7 @@
           </table>
         </div>
         <!-- FIN NUMERACION ACTUAL -->
-        
+
       </form>
     </div>
   </div>
@@ -209,9 +216,9 @@
 <script type="text/javascript"><!--
 function image_upload(field, preview) {
 	$('#dialog').remove();
-	
+
 	$('#content').prepend('<div id="dialog" style="padding: 3px 0px 0px 0px;"><iframe src="index.php?route=common/filemanager&token=<?php echo $token; ?>&field=' + encodeURIComponent(field) + '" style="padding:0; margin: 0; display: block; width: 100%; height: 100%;" frameborder="no" scrolling="auto"></iframe></div>');
-	
+
 	$('#dialog').dialog({
 		title: '<?php echo $text_image_manager; ?>',
 		close: function (event, ui) {
@@ -226,7 +233,7 @@ function image_upload(field, preview) {
 					}
 				});
 			}
-		},	
+		},
 		bgiframe: false,
 		width: 800,
 		height: 400,
@@ -234,8 +241,8 @@ function image_upload(field, preview) {
 		modal: false
 	});
 };
-//--></script> 
-<script type="text/javascript" src="layout/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script> 
+//--></script>
+<script type="text/javascript" src="layout/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script>
 <script type="text/javascript"><!--
     $('.date').datepicker({dateFormat: 'yy-mm-dd'});
     $('.datetime').datetimepicker({
@@ -243,10 +250,10 @@ function image_upload(field, preview) {
         timeFormat: 'h:m'
     });
     $('.time').timepicker({timeFormat: 'h:m'});
-    //--></script> 
+    //--></script>
 <script type="text/javascript"><!--
-    $('#tabs a').tabs(); 
-    $('#languages a').tabs(); 
+    $('#tabs a').tabs();
+    $('#languages a').tabs();
     $('#vtab-option a').tabs();
-    //--></script> 
+    //--></script>
 <?php echo $footer; ?>

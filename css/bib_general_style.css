@@ -1,0 +1,73 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+  padding: 1em;
+}
+
+.txt-name {
+  font-size: 5em;
+  font-weight: bold;
+  padding-top: 1em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.txt-event {
+  font-size: 3em;
+  font-weight: normal;
+  padding-top: 1em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.txt-date {
+  text-align: center;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.txt-bracket {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+.txt-bib {
+  font-size: 18em;
+  padding-top: 0.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.column-left {
+  float: left;
+  width: 33%;
+  text-align: center;
+  top: 15mm;
+}
+
+.column-center {
+  float: left;
+  width: 33%;
+  text-align: center;
+  top: 15mm;
+}
+
+.column-right {
+  float: right;
+  width: 33%;
+  text-align: center;
+  top: 15mm;
+}
+
+.divider-space {
+  position: relative;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+}

@@ -1,3 +1,7 @@
+<?php
+echo 'beep';
+exit(0);
+?>
 <?php echo $header; ?>
 
 <div id="content">
@@ -150,7 +154,7 @@
             <tr>
               <td><?php echo $entry_eventos_imagen_home; ?></td>
               <td>
-                <img src="<?php echo $preview_eventos_imagen_home; ?>" alt="" id="preview_eventos_imagen_home" />	
+                <img src="<?php echo $preview_eventos_imagen_home; ?>" alt="" id="preview_eventos_imagen_home" />
                 <br />
                 <input type="hidden" name="file_eventos_logo" value="<?php echo $eventos_imagen_home; ?>" id="file_eventos_logo" />
                 <input name="eventos_imagen_home" type="file" id="eventos_imagen_home" />
@@ -161,12 +165,23 @@
             <tr>
               <td><?php echo $entry_eventos_imagen_header; ?></td>
               <td>
-                <img src="<?php echo $preview_eventos_imagen_header; ?>" alt="" id="preview_eventos_imagen_header" />	
+                <img src="<?php echo $preview_eventos_imagen_header; ?>" alt="" id="preview_eventos_imagen_header" />
                 <br />
                 <input type="hidden" name="file_eventos_imagen_header" value="<?php echo $eventos_imagen_header; ?>" id="file_eventos_imagen_header" />
                 <input name="eventos_imagen_header" type="file" id="eventos_imagen_header" />
                 <br />
                 <a onclick="image_delete('eventos_imagen_header', 'file_eventos_imagen_header', 'preview_eventos_imagen_header');" id="delete_cloudfile">Borrar Imágen</a>
+              </td>
+            </tr>
+            <tr>
+              <td><?php echo $entry_eventos_imagen_afiche; ?></td>
+              <td>
+                <img src="<?php echo $preview_eventos_imagen_afiche; ?>" alt="" id="preview_eventos_imagen_afiche" />
+                <br />
+                <input type="hidden" name="file_eventos_imagen_afiche" value="<?php echo $eventos_imagen_afiche; ?>" id="file_eventos_imagen_afiche" />
+                <input name="eventos_imagen_afiche" type="file" id="eventos_imagen_afiche" />
+                <br />
+                <a onclick="image_delete('eventos_imagen_afiche', 'file_eventos_imagen_afiche', 'preview_eventos_imagen_afiche');" id="delete_cloudfile">Borrar Imágen</a>
               </td>
             </tr>
           </table>
@@ -187,13 +202,13 @@
           </table>
         </div>
         <!-- FIN NUMERACION ACTUAL -->
-        
+
       </form>
     </div>
   </div>
 </div>
 <script type="text/javascript">
-<!--	
+<!--
 	// Borrar CloudFile
     function image_delete(field, file, preview) {
 		var archivo = $('#' + file).val();
@@ -206,23 +221,23 @@
 			beforeSend: function() {
 				$('#delete_cloudfile').attr('disabled', true);
 				$('#delete_cloudfile').after('<span class="wait">&nbsp;<img src="../imagenes/loading.gif" alt="" /></span>');
-			},		
+			},
 			complete: function() {
 				$('#delete_cloudfile').attr('disabled', false);
 				$('.wait').remove();
-			},			
+			},
 			success: function(json) {
-				if (json['output']) {			
+				if (json['output']) {
 					alert(json['output']);
-					$('#' + preview).attr('src', '<?php echo $no_image; ?>'); 
+					$('#' + preview).attr('src', '<?php echo $no_image; ?>');
 					$('#' + field).attr('value', '');
 					$('#' + file).attr('value', '');
 				}
 			}
-		});	
+		});
     };
 //-->
-</script> 
+</script>
 <!--
 <script type="text/javascript">
     var image_row = <?php // echo $image_row; ?>;
@@ -239,9 +254,9 @@
 
         image_row++;
     }
-    </script> 
---> 
-<script type="text/javascript" src="layout/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script> 
+    </script>
+-->
+<script type="text/javascript" src="layout/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script>
 <script type="text/javascript"><!--
     $('.date').datepicker({dateFormat: 'yy-mm-dd'});
     $('.datetime').datetimepicker({
@@ -249,10 +264,10 @@
         timeFormat: 'h:m'
     });
     $('.time').timepicker({timeFormat: 'h:m'});
-    //--></script> 
+    //--></script>
 <script type="text/javascript"><!--
-    $('#tabs a').tabs(); 
-    $('#languages a').tabs(); 
+    $('#tabs a').tabs();
+    $('#languages a').tabs();
     $('#vtab-option a').tabs();
-    //--></script> 
+    //--></script>
 <?php echo $footer; ?>
