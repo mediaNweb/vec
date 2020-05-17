@@ -30,7 +30,7 @@
     <ul class="pricing">
       <div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
         <li class="price best-value" Xdata-sr="enter bottom over 1s and move 80px wait 0.2s">
-          <h5 class="price-title"><?php echo $nombre; ?> <span class="price-label"><?php echo $pais; ?></span></h5>
+          <h5 class="price-title"><?php echo $nombre . ' ' . $apellido; ?> <span class="price-label"><?php echo $pais; ?></span></h5>
           <span class="best-value-label"><?php echo $text_result_col_athlete; ?></span>
           <div class="price-amount"><?php echo $numero; ?></div>
           <ul class="price-feature">

@@ -30,6 +30,7 @@ class ControllerEventoBib extends Controller
 			$time_format	= 'i:s';
 			$cedula 		= $resultado['cedula'];
 			$nombre 		= ($resultado['nombre'] != '') ? $resultado['nombre'] : $this->language->get('text_participant');
+			$apellido 		= ($resultado['apellido'] != '') ? $resultado['apellido'] : '';
 			$numero 		= $resultado['numero'];
 			$categoria 		= $resultado['categoria'] . ' (' . $resultado['carrera'] . ')';
 			$pos_general 	= $resultado['pos_general'];
@@ -43,6 +44,7 @@ class ControllerEventoBib extends Controller
 
 			$this->data['cedula'] = $cedula;
 			$this->data['nombre'] = $nombre;
+			$this->data['apellido'] = $apellido;
 			$this->data['numero'] = $numero;
 			$this->data['foto'] = $jpg;
 			$this->data['categoria'] = ($categoria != '') ? $categoria : 'n/a';

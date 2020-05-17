@@ -145,6 +145,7 @@ class ControllerEventoEvento extends Controller
 					$time_format	= 'i:s';
 					$cedula 		= $resultado['cedula'];
 					$nombre 		= ($resultado['nombre'] != '') ? $resultado['nombre'] : $this->language->get('text_participant');
+					$apellido 		= ($resultado['apellido'] != '') ? $resultado['apellido'] : '';
 					$numero 		= $resultado['numero'];
 					$genero 		= $resultado['genero'];
 					$categoria 		= $resultado['categoria'];
@@ -173,6 +174,7 @@ class ControllerEventoEvento extends Controller
 
 					$this->data['cedula'] = $cedula;
 					$this->data['nombre'] = $nombre;
+					$this->data['apellido'] = $apellido;
 					$this->data['numero'] = $numero;
 					$this->data['genero'] = $genero;
 					$this->data['categoria'] = ($categoria != '') ? $categoria : '-';

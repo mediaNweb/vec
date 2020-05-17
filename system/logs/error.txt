@@ -371,3 +371,4 @@
 2020-05-15 23:39:25 - PHP Notice:  Undefined variable: eventos_certificado_foto in C:\inetpub\wwwroot\racetimer\controller\evento\bib.php on line 124
 2020-05-15 23:40:49 - PHP Notice:  Undefined variable: img_certificado in C:\inetpub\wwwroot\racetimer\controller\evento\bib.php on line 104
 2020-05-15 23:40:49 - PHP Notice:  Undefined variable: eventos_certificado_foto in C:\inetpub\wwwroot\racetimer\controller\evento\bib.php on line 124
+2020-05-17 15:21:13 - PHP Notice:  Undefined variable: apellido in C:\inetpub\wwwroot\racetimer\view\evento\resultados.php on line 33

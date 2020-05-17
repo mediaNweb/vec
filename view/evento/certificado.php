@@ -15,7 +15,7 @@
 	<div class="container">
 		<div class="row-1">
 			<div class="txt-name">
-				<?php echo $nombre; ?>
+				<?php echo $nombre . ' ' . $apellido; ?>
 			</div>
 			<div class="txt-event">
 				<?php echo $eventos_titulo; ?>
