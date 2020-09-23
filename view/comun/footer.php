@@ -19,7 +19,7 @@
       <!--/ .footer-social -->
 
       <div class="copyright">
-        <p>Copyright 2017 Prom'es Europe - All rights reserved. - Developed by: <a href="http://www.median.web.ve" target="_blank">mediaNweb</a></p>
+        <p>Copyright 2020 Prom-es - All rights reserved. - Developed by: <a href="http://www.median.web.ve" target="_blank">mediaNweb</a></p>
 
         <!-- BEGIN language popover -->
         <div class="language"> <span class="icon-globe"></span> <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-placement="top" data-content="

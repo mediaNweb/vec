@@ -20,7 +20,7 @@ $_['text_events_section_title']			= 'Nos événements';
 $_['text_heading_title']				= 'Accueil';
 $_['text_menu_title']					= 'Menu';
 $_['text_tag_line_1']					= 'Un système d\'enregistrement précis rendant votre course encore plus';
-$_['text_tag_line_2']					= 'C\'est exactement ce que permet Prom'es,<br />un système';
+$_['text_tag_line_2']					= 'C\'est exactement ce que permet Prom-es,<br />un système';
 $_['text_tag_line_word_1']				= 'pratique';
 $_['text_tag_line_word_2']				= 'fiable';
 $_['text_tag_line_word_3']				= 'unique';
@@ -49,4 +49,3 @@ $_['input_contact_form_subject']    	= 'Sujet';
 // Error
 $_['error_contact_form_message']	= 'Un problème s\'est présenté lors de la soumission. Merci de vérifier les champs en rouge ici-bas';
 $_['error_contact_form_success']    = 'Votre message a été transmis. Nous reviendrons vers vous prochainement';
-?>

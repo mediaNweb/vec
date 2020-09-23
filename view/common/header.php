@@ -55,7 +55,7 @@
   <link rel="icon" type="image/png" href="image/favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="image/favicon/favicon-16x16.png" sizes="16x16" />
   <link rel="icon" type="image/png" href="image/favicon/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="Prom'es Europe" />
+  <meta name="application-name" content="Prom-es" />
   <meta name="msapplication-TileColor" content="#BA2626" />
   <meta name="msapplication-TileImage" content="image/favicon/mstile-144x144.png" />
   <meta name="msapplication-square70x70logo" content="image/favicon/mstile-70x70.png" />

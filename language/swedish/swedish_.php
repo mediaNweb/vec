@@ -20,7 +20,7 @@ $_['text_events_section_title']			= 'Our Events';
 $_['text_heading_title']				= 'Home';
 $_['text_menu_title']					= 'Menu';
 $_['text_tag_line_1']					= 'Een accurate tijdsregistratie maakt de wedstrijd nog spannender.';
-$_['text_tag_line_2']					= 'En precies dat doet Prom'es op een';
+$_['text_tag_line_2']					= 'En precies dat doet Prom-es op een';
 $_['text_tag_line_word_1']				= 'praktische';
 $_['text_tag_line_word_2']				= 'betrouwbare';
 $_['text_tag_line_word_3']				= 'unieke manier';
@@ -49,4 +49,3 @@ $_['input_contact_form_subject']    	= 'Subject';
 // Error
 $_['error_contact_form_message']	= 'There was a problem with your submission. Please check the field(s) with red label below.';
 $_['error_contact_form_success']    = 'Your message has been sent. We\'ll get back to you soon!';
-?>

@@ -13,7 +13,7 @@
           <div class="hero-content row centered">
             <div class="col-lg-12">
               <p class="lead text-shadow-small margin-bot-30" data-sr="enter bottom over 1s and move 50px wait 0.4s">Een accurate tijdsregistratie maakt de wedstrijd nog spannender.</p>
-              <h1 class="text-shadow-medium" data-sr="enter bottom over 1s and move 50px wait 0.3s">En precies dat doet Prom'es op een </h1>
+              <h1 class="text-shadow-medium" data-sr="enter bottom over 1s and move 50px wait 0.3s">En precies dat doet Prom-es op een </h1>
               <!-- BEGIN Animated/Rotating Headline -->
               <h1 class="animated-headline slide" data-sr="enter bottom over 1s and move 50px wait 0.3s"> <span class="animated-words-wrapper"> <b class="is-visible">praktische</b> <b>betrouwbare</b> <b>unieke manier</b> </span>
                 <!--/ .animated-words-wrapper -->
