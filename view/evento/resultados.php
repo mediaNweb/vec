@@ -142,8 +142,8 @@
           <div class="row">
             <div class="col-lg-12 centered">
               <h4></h4>
-              <p class="sub-lead"><?php echo $text_result_certificate; ?></p>
               <?php if (isset($time_tag)) { ?>
+                <p class="sub-lead"><?php echo $text_result_certificate; ?></p>
                 <a href="<?php echo $certificado; ?>" target="_blank" class="cta cta-default all-caps clearfix" Xdata-sr="enter bottom over 1s and move 75px"><?php echo $text_result_certificate_link; ?></a>
               <?php } ?>
               <a href="<?php echo $bib; ?>" target="_blank" class="cta cta-default all-caps clearfix" Xdata-sr="enter bottom over 1s and move 75px"><?php echo $text_result_bib_link; ?></a>
